@@ -20,6 +20,9 @@ let connectionsPriority = 0.2;
 const sliderIds = ["suvivabilitySlider", "burstSurvivabilitySlider", "firepowerSlider", "torpedoSlider", "aviationSlider", "antiAirSlider", "SameFactionSlider", "SynergySlider"];
 const defaultPriorities = [eHPMultiplier,burstDamageFear,FPMultiplier,TRPMultiplier,AVIMultiplier,AAMultiplier,factionPriority,connectionsPriority]
 
+let averageAccuracy = 151.4;
+let averageLuck = 53.5;
+
 
 // retrofits goes first !!! important
 //new line extra ;
@@ -165,12 +168,13 @@ class Ship{
         }
 
         //pseudo eHP + armor
+        //TODO calculate best combination
         if(type === "DD"){
-            this.effectiveHealth = (parseInt(health)+1060)**burstDamageFear*(parseInt(evasion)+(parseInt(luck)/1000.00)); // + 1060 health 2 repair toolboxes, needed for maintain accurate calc
-        }else if(type === "CB" || type === "CA" || type === "CL"){                                                                        // last thing this (parseInt(health)+1060)/10000.00 goniometric function sin could be multiplier for health if problems with low hp ships less tankier
-            this.effectiveHealth = (parseInt(health)+602)**burstDamageFear*((parseInt(evasion)+49)+(parseInt(luck)/1000.00)); // 1 repair toolbox + Improved Hydraulic Rudder (washing machine)
+            this.effectiveHealth = (parseInt(health)+1060)/(Math.max(1, Math.min(0.1, (0.1 + averageAccuracy/(averageAccuracy+parseInt(evasion)+2) + ((averageLuck - parseInt(luck))/1000))))); // + 1060 health 2 repair toolboxes, needed for maintain accurate calc
+        }else if(type === "CB" || type === "CA" || type === "CL"){
+            this.effectiveHealth = (parseInt(health)+602)/(Math.max(1, Math.min(0.1, (0.1 + averageAccuracy/(averageAccuracy+parseInt(evasion)+2) + ((averageLuck - parseInt(luck)+49)/1000))))); // 1 repair toolbox + Improved Hydraulic Rudder (washing machine)
         }else{
-            this.effectiveHealth = parseInt(health)**burstDamageFear*(parseInt(evasion)+(parseInt(luck)/1000.0));
+            this.effectiveHealth = (parseInt(health))/(Math.max(1, Math.min(0.1, (0.1 + averageAccuracy/(averageAccuracy+parseInt(evasion)+2) + ((averageLuck - parseInt(luck))/1000)))));
         }
         if(armor === "Light"){
             this.effectiveHealth = this.effectiveHealth*0.95;
@@ -375,13 +379,13 @@ function shipSort(ships, fleetType, connectionsPriority, factionPriority, curren
             shipsRatedIndex++;
             for (let j = 0; j < factions.length; j++) {
                 if(ships[shipsRated[shipsRatedIndex][0]].nation === factions[j]){
-                    shipsRated[shipsRatedIndex][1] += -factionPriority*constantMultiplier -1;
+                    shipsRated[shipsRatedIndex][1] += -factionPriority*constantMultiplier -0.5;
                 }
             }
 
             for (let j = 0; j < connections.length; j++) {
                 if (ships[shipsRated[shipsRatedIndex][0]].name === connections[j]){
-                    shipsRated[shipsRatedIndex][1] += -connectionsPriority*constantMultiplier -1;
+                    shipsRated[shipsRatedIndex][1] += -connectionsPriority*constantMultiplier -0.5;
                 }
             }
         }
@@ -391,9 +395,9 @@ function shipSort(ships, fleetType, connectionsPriority, factionPriority, curren
         if (shipFocus === "flagship") {
             shipsRated[i][1] += -ships[shipsRated[i][0]].effectiveHealth / eHPModConst * 2 * constantMultiplier - ships[shipsRated[i][0]].effectiveHealth / eHPModConst * eHPMultiplier * constantMultiplier;
         }else if (shipFocus === "mainTank"){
-            shipsRated[i][1] += -ships[shipsRated[i][0]].effectiveHealth / eHPModConst * 2 * constantMultiplier - ships[shipsRated[i][0]].effectiveHealth / eHPModConst * eHPMultiplier * constantMultiplier;
+            shipsRated[i][1] += -((ships[shipsRated[i][0]].effectiveHealth / eHPModConst) * 2 * constantMultiplier) - ships[shipsRated[i][0]].effectiveHealth / eHPModConst * eHPMultiplier * constantMultiplier;
         }else if(shipFocus === "offTank") {
-            shipsRated[i][1] += - ships[shipsRated[i][0]].effectiveHealth / (eHPModConst * 2)*2*constantMultiplier - ships[shipsRated[i][0]].effectiveHealth/eHPModConst*eHPMultiplier*constantMultiplier;
+            shipsRated[i][1] += - ships[shipsRated[i][0]].effectiveHealth / (eHPModConst * 2)*4*constantMultiplier - ships[shipsRated[i][0]].effectiveHealth/eHPModConst*eHPMultiplier*constantMultiplier;
             shipsRated[i][1] += - ships[shipsRated[i][0]].effectiveFirepower/FPModConst*1*constantMultiplier - ships[shipsRated[i][0]].effectiveFirepower/FPModConst*FPMultiplier*constantMultiplier;
             shipsRated[i][1] += - ships[shipsRated[i][0]].effectiveTorpedo/TRPModConst*1*constantMultiplier - ships[shipsRated[i][0]].effectiveTorpedo/TRPModConst*TRPMultiplier*constantMultiplier;
         }else if(shipFocus === "protected"){
@@ -422,7 +426,7 @@ function shipSort(ships, fleetType, connectionsPriority, factionPriority, curren
             }else{
                 shipsRated[i][1] += +1; //shipsRated[i][1]/4;
             }
-        }else{
+        }else if(shipFocus === "side1"|| shipFocus === "side2"){
             let find = false;
             for (let j = 0; j < ships[shipsRated[i][0]].special.length; j++) {
                 if(ships[shipsRated[i][0]].special[j] === "flag"){
@@ -437,7 +441,6 @@ function shipSort(ships, fleetType, connectionsPriority, factionPriority, curren
         }
     }
 
-    // switch button
     // no connection duplikates
     // ship focus
 
