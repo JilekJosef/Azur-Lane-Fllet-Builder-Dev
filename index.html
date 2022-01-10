@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>AL_FB_UI</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body id="body">
+    <header class="text-truncate header-blue" id="header">
+        <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
+            <div class="container-fluid"><a class="navbar-brand" href="#">Azur Lane Fleet Builder</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Surface Fleet</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Submarine Fleet</a></li>
+                    </ul><span class="navbar-text"> </span>
+                </div>
+            </div>
+        </nav>
+        <div class="container" id="con1">
+            <div class="table-responsive" id="fleet">
+                <table class="table">
+                    <thead>
+                        <tr id="headTrFleet">
+                            <th id="headTrFleet1">Create Surface Fleet</th>
+                        </tr>
+                    </thead>
+                    <tbody id="fleetTbody">
+                        <tr>
+                            <td>
+                                <div id="floating-label-1" class="form-floating mb-3" style="width: auto;height: auto;margin: auto;"><select id="side1" class="form-select" for="floatinginput" placeholder="HGsOFT" style="width: 210px;height: auto;" onchange="updateShips()">
+                                        <optgroup label="This is a group">
+                                            <option value="1">This is item 1</option>
+                                            <option value="2">This is item 2</option>
+                                            <option value="3">This is item 3</option>
+                                        </optgroup>
+                                    </select><label class="form-label" id="floating-label-2">Side</label></div>
+                            </td>
+                            <td>
+                                <div id="floating-label-3" class="form-floating mb-3"><select id="flagship" class="form-select" for="floatinginput" placeholder="HGsOFT" style="width: 210px;height: auto;" onchange="updateShips()">
+                                        <optgroup label="This is a group">
+                                            <option value="1">This is item 1</option>
+                                            <option value="2">This is item 2</option>
+                                            <option value="3">This is item 3</option>
+                                        </optgroup>
+                                    </select><label class="form-label" id="floating-label-4">Flagship</label></div>
+                            </td>
+                            <td>
+                                <div id="floating-label-5" class="form-floating mb-3"><select id="side2" class="form-select" for="floatinginput" placeholder="HGsOFT" style="width: 210px;" onchange="updateShips()">
+                                        <optgroup label="This is a group">
+                                            <option value="1">This is item 1</option>
+                                            <option value="2">This is item 2</option>
+                                            <option value="3">This is item 3</option>
+                                        </optgroup>
+                                    </select><label class="form-label" id="floating-label-6">Side</label></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="floating-label-7" class="form-floating mb-3"><select id="mainTank" class="form-select" for="floatinginput" placeholder="HGsOFT" style="width: 210px;height: auto;" onchange="updateShips()">
+                                        <optgroup label="This is a group">
+                                            <option value="1">This is item 1</option>
+                                            <option value="2">This is item 2</option>
+                                            <option value="3">This is item 3</option>
+                                        </optgroup>
+                                    </select><label class="form-label" id="floating-label-8">Main Tank</label></div>
+                            </td>
+                            <td>
+                                <div id="floating-label-9" class="form-floating mb-3"><select id="protected" class="form-select" for="floatinginput" placeholder="HGsOFT" style="width: 210px;" onchange="updateShips()">
+                                        <optgroup label="This is a group">
+                                            <option value="1">This is item 1</option>
+                                            <option value="2">This is item 2</option>
+                                            <option value="3">This is item 3</option>
+                                        </optgroup>
+                                    </select><label class="form-label" id="floating-label-10">Protected</label></div>
+                            </td>
+                            <td>
+                                <div id="floating-label-11" class="form-floating mb-3"><select id="offTank" class="form-select" for="floatinginput" placeholder="HGsOFT" style="width: 210px;" onchange="updateShips()">
+                                        <optgroup label="This is a group">
+                                            <option value="1">This is item 1</option>
+                                            <option value="2">This is item 2</option>
+                                            <option value="3">This is item 3</option>
+                                        </optgroup>
+                                    </select><label class="form-label" id="floating-label-12">Off Tank</label></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <aside>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th id="colorWhite1">Priorities</th>
+                            </tr>
+                        </thead>
+                        <tbody id="colorWhite0">
+                            <tr>
+                                <td>Survivability</td>
+                                <td><input class="form-range" type="range" id="suvivabilitySlider" onchange="prioritiesUpdate()"></td>
+                            </tr>
+                            <tr>
+                                <td>Burst&nbsp;survivability</td>
+                                <td><input class="form-range" type="range" id="burstSurvivabilitySlider" onchange="prioritiesUpdate()"></td>
+                            </tr>
+                            <tr>
+                                <td>Firepower</td>
+                                <td><input class="form-range" type="range" id="firepowerSlider" onchange="prioritiesUpdate()"></td>
+                            </tr>
+                            <tr>
+                                <td>Torpedo</td>
+                                <td><input class="form-range" type="range" id="torpedoSlider" onchange="prioritiesUpdate()"></td>
+                            </tr>
+                            <tr>
+                                <td>Aviation</td>
+                                <td><input class="form-range" type="range" id="aviationSlider" onchange="prioritiesUpdate()"></td>
+                            </tr>
+                            <tr>
+                                <td>Anti Air</td>
+                                <td><input class="form-range" type="range" id="antiAirSlider" onchange="prioritiesUpdate()"></td>
+                            </tr>
+                            <tr>
+                                <td>Same faction</td>
+                                <td><input class="form-range" type="range" id="SameFactionSlider" onchange="prioritiesUpdate()"></td>
+                            </tr>
+                            <tr>
+                                <td>Synergy</td>
+                                <td><input class="form-range" type="range" id="SynergySlider" onchange="prioritiesUpdate()"></td>
+                            </tr>
+                            <tr>
+                                <td><button class="btn btn-primary" id="clearFleet" type="button" style="margin: 0;" onclick="clearFleet()">Clear Fleet</button></td>
+                                <td><button class="btn btn-primary" id="resetPriorities" type="button" style="margin: 0;" onclick="resetPriorities()">Reset Priorities</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </aside>
+            <div id="stats">
+                <div class="table-responsive" id="statsTable1">
+                    <table class="table" id="colorWhite2">
+                        <thead>
+                            <tr>
+                                <th>Main Fleet Average</th>
+                                <th>(Pseudo values)</th>
+                                <th>Vanguard Fleet Average</th>
+                                <th>(Pseudo values)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Firepower</td>
+                                <td id="mainFirepower">0</td>
+                                <td>Firepower</td>
+                                <td id="vanguardFirepower">0</td>
+                            </tr>
+                            <tr>
+                                <td>Anti Air</td>
+                                <td id="mainAntiAir">0</td>
+                                <td>Anti Air</td>
+                                <td id="vanguardAntiAir">0</td>
+                            </tr>
+                            <tr>
+                                <td>Torpedo</td>
+                                <td id="mainTorpedo">0</td>
+                                <td>Torpedo</td>
+                                <td id="vanguardTorpedo">0</td>
+                            </tr>
+                            <tr>
+                                <td>Aviation</td>
+                                <td id="mainAviation">0</td>
+                                <td>Aviation</td>
+                                <td id="vanguardAviation">0</td>
+                            </tr>
+                            <tr>
+                                <td>Effective Health</td>
+                                <td id="mainHealth">0</td>
+                                <td>Effective Health</td>
+                                <td id="vanguardHealth">0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="con2">
+            <div class="table-responsive" id="filterTableHeader">
+                <table class="table">
+                    <thead>
+                        <tr></tr>
+                    </thead>
+                    <tbody id="tableFilterSittings">
+                        <tr>
+                            <td>
+                                <div id="floating-label-13" class="form-floating mb-3" style="width: auto;margin-bottom: 0px!important;"><select id="filterMode" class="form-select" for="floatinginput" placeholder="HGsOFT" style="width: 138px;" onchange="hideShipsOnFilter()">
+                                        <optgroup label="This is a group">
+                                            <option value="1">This is item 1</option>
+                                            <option value="2">This is item 2</option>
+                                            <option value="3">This is item 3</option>
+                                        </optgroup>
+                                    </select><label class="form-label" id="floating-label-14">Filter mode</label></div>
+                            </td>
+                            <td rowspan="2">
+                                <div id="floating-label-15" class="form-floating mb-3" style="width: auto;"><select id="showFaction" class="form-select" for="floatinginput" placeholder="HGsOFT" style="width: auto;height: 127px;" multiple="" onchange="hideShipsOnFilter()">
+                                        <optgroup label="This is a group">
+                                            <option value="1">This is item 1</option>
+                                            <option value="2">This is item 2</option>
+                                            <option value="3">This is item 3</option>
+                                        </optgroup>
+                                    </select><label class="form-label" id="floating-label-16" style="background-color: rgba(255,255,255,1.0);opacity: 100;color: rgba(0,0,0,0.65);width: 80%;height: auto;margin-top: 7px;padding-top: 9px;padding-bottom: 1px;">Faction</label></div>
+                            </td>
+                            <td rowspan="2">
+                                <div id="floating-label-19" class="form-floating mb-3"><select id="shipRarity" class="form-select" for="floatinginput" placeholder="HGsOFT" style="width: auto;height: 127px;" multiple="" onchange="hideShipsOnFilter()">
+                                        <optgroup label="This is a group">
+                                            <option value="1">This is item 1</option>
+                                            <option value="2">This is item 2</option>
+                                            <option value="3">This is item 3</option>
+                                        </optgroup>
+                                    </select><label class="form-label" id="floating-label-20" for="floatinginput" style="background-color: rgba(255,255,255,1.0);opacity: 100;color: rgba(0,0,0,0.65);width: 80%;height: auto;margin-top: 7px;padding-top: 9px;padding-bottom: 1px;">Rarity</label></div>
+                            </td>
+                            <td rowspan="2">
+                                <div id="floating-label-17" class="form-floating mb-3" style="width: auto;"><select id="shipType" class="form-select" for="floatinginput" placeholder="HGsOFT" style="width: auto;height: 127px;" multiple="" onchange="hideShipsOnFilter()">
+                                        <optgroup label="This is a group">
+                                            <option value="1">This is item 1</option>
+                                            <option value="2">This is item 2</option>
+                                            <option value="3">This is item 3</option>
+                                        </optgroup>
+                                    </select><label class="form-label" id="floating-label-18" style="background-color: rgba(255,255,255,1.0);opacity: 100;color: rgba(0,0,0,0.65);width: 65%;height: auto;margin-top: 7px;padding-top: 9px;padding-bottom: 1px;">Type</label></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-top: 0px;"><button class="btn btn-primary" id="filterClear" type="button" onclick="resetFilter()">Filter Clear</button></td>
+                        </tr>
+                        <tr></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-responsive d-lg-flex" id="filterTable" style="display: list-item !important;">
+                <table class="table">
+                    <thead>
+                        <tr></tr>
+                    </thead>
+                    <tbody id="colorWhite">
+                        <tr>
+                            <td></td>
+                            <td>Cell 2</td>
+                            <td>Cell 3</td>
+                            <td>Cell 4</td>
+                            <td>Cell 5</td>
+                            <td>Cell 6</td>
+                            <td>Cell 7</td>
+                            <td>Cell 8</td>
+                            <td>Cell 9</td>
+                            <td>Cell 10</td>
+                        </tr>
+                        <tr>
+                            <td>Cell 3</td>
+                            <td>Cell 4</td>
+                            <td>Cell 3</td>
+                            <td>Cell 4</td>
+                            <td>Cell 5</td>
+                            <td>Cell 6</td>
+                            <td>Cell 7</td>
+                            <td>Cell 8</td>
+                            <td>Cell 9</td>
+                            <td>Cell 10</td>
+                        </tr>
+                        <tr>
+                            <td>Cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Cell 3</td>
+                            <td>Cell 4</td>
+                            <td>Cell 5</td>
+                            <td>Cell 6</td>
+                            <td>Cell 7</td>
+                            <td>Cell 8</td>
+                            <td>Cell 9</td>
+                            <td>Cell 10</td>
+                        </tr>
+                        <tr>
+                            <td>Cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Cell 3</td>
+                            <td>Cell 4</td>
+                            <td>Cell 5</td>
+                            <td>Cell 6</td>
+                            <td>Cell 7</td>
+                            <td>Cell 8</td>
+                            <td>Cell 9</td>
+                            <td>Cell 10</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </header>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>

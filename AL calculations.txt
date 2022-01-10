@@ -1,0 +1,17 @@
+trueAcc= 0,1 + (acc/(acc-bossEva+2)+((luck-bossLuck)/1000)
+bossEva = avg 129
+bossLuck = avg 53
+acc >= 0.1 & acc <= 1
+
+eHP = HP / (0,1 + (bossAcc/(bossAcc+Eva+2)+((bossLuck-luck)/1000))
+bossAcc = avg 152
+eHP <= HP/0,1 & eHP >= HP
+
+//
+pseudo eHP = HP*(Eva+(luck/1000)) 
+
+pseudo trueAcc = acc+luck/1000
+
+trueReload = sqrt(200/(reload+100))
+
+pseudo DPS = trueAcc*firepower/trueReload //same with AA,AVI,TRP
