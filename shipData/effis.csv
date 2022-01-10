@@ -1,0 +1,535 @@
+﻿ID;Ship;Class.;Slot 1;Max;Slot 2;Max;Slot 3;Max
+1;Universal Bulin;Destroyer (DD) DD;DD Guns;100%;Anti-Air Guns;100%;Anti-Air Guns;100%
+2;Prototype Bulin MKII;Destroyer (DD) DD;DD Guns;100%;Anti-Air Guns;100%;Anti-Air Guns;100%
+3;Specialized Bulin Custom MKIII;Destroyer (DD) DD;DD Guns;100%;Anti-Air Guns;100%;Anti-Air Guns;100%
+4;Dewey;Destroyer (DD) DD;DD Guns;120%;Torpedoes;130%;Anti-Air Guns;130%
+5;Cassin;Destroyer (DD) DD;DD Guns;125%;Torpedoes;135%;Anti-Air Guns;130%
+6;Downes;Destroyer (DD) DD;DD Guns;125%;Torpedoes;135%;Anti-Air Guns;130%
+7;Gridley;Destroyer (DD) DD;DD Guns;115%;Torpedoes;135%;Anti-Air Guns;125%
+8;Craven;Destroyer (DD) DD;DD Guns;115%;Torpedoes;135%;Anti-Air Guns;125%
+9;McCall;Destroyer (DD) DD;DD Guns;115%;Torpedoes;135%;Anti-Air Guns;125%
+10;Maury;Destroyer (DD) DD;DD Guns;115%;Torpedoes;140%;Anti-Air Guns;125%
+11;Fletcher;Destroyer (DD) DD;DD Guns;120%;Torpedoes;130%;Anti-Air Guns;130%
+13;Charles Ausburne;Destroyer (DD) DD;DD Guns;125%;Torpedoes;130%;Anti-Air Guns;130%
+14;Thatcher;Destroyer (DD) DD;DD Guns;120%;Torpedoes;130%;Anti-Air Guns;130%
+15;Aulick;Destroyer (DD) DD;DD Guns;120%;Torpedoes;130%;Anti-Air Guns;130%
+16;Foote;Destroyer (DD) DD;DD Guns;120%;Torpedoes;130%;Anti-Air Guns;130%
+17;Spence;Destroyer (DD) DD;DD Guns;120%;Torpedoes;130%;Anti-Air Guns;130%
+18;Benson;Destroyer (DD) DD;DD Guns;130%;Torpedoes;130%;Anti-Air Guns;125%
+19;Laffey;Destroyer (DD) DD;DD Guns;165%;Torpedoes;125%;Anti-Air Guns;125%
+26;Sims;Destroyer (DD) DD;DD Guns;125%;Torpedoes;130%;Anti-Air Guns;135%
+27;Hammann;Destroyer (DD) DD;DD Guns;125%;Torpedoes;130%;Anti-Air Guns;135%
+28;Eldridge;Destroyer (DD) DD;DD Guns;115%;Torpedoes;130%;Anti-Air Guns;125%
+29;Omaha;Light cruiser (CL) CL;CL Guns;120%;Torpedoes;155%;Anti-Air Guns;130%
+30;Raleigh;Light cruiser (CL) CL;CL Guns;120%;Torpedoes;155%;Anti-Air Guns;130%
+31;Brooklyn;Light cruiser (CL) CL;CL Guns;135%;DD Guns;65%;Anti-Air Guns;100%
+32;Phoenix;Light cruiser (CL) CL;CL Guns;135%;DD Guns;65%;Anti-Air Guns;100%
+33;Helena;Light cruiser (CL) CL;CL Guns;140%;DD Guns;65%;Anti-Air Guns;115%
+34;Atlanta;Light cruiser (CL) CL;CL/DD Guns;105%;Torpedoes;135%;Anti-Air Guns;160%
+35;Juneau;Light cruiser (CL) CL;CL/DD Guns;105%;Torpedoes;135%;Anti-Air Guns;160%
+36;San Diego;Light cruiser (CL) CL;CL/DD Guns;115%;Torpedoes;135%;Anti-Air Guns;185%
+37;Cleveland;Light cruiser (CL) CL;CL Guns;130%;DD Guns;70%;Anti-Air Guns;120%
+38;Columbia;Light cruiser (CL) CL;CL Guns;130%;DD Guns;70%;Anti-Air Guns;120%
+39;Pensacola;Heavy cruiser (CA) CA;CA Guns;120%;DD Guns;45%;Anti-Air Guns;105%
+40;Salt Lake City;Heavy cruiser (CA) CA;CA Guns;120%;DD Guns;45%;Anti-Air Guns;105%
+41;Northampton;Heavy cruiser (CA) CA;CA Guns;120%;DD Guns;55%;Anti-Air Guns;105%
+42;Chicago;Heavy cruiser (CA) CA;CA Guns;120%;DD Guns;55%;Anti-Air Guns;105%
+43;Houston;Heavy cruiser (CA) CA;CA Guns;120%;DD Guns;55%;Anti-Air Guns;105%
+44;Portland;Heavy cruiser (CA) CA;CA Guns;115%;DD Guns;65%;Anti-Air Guns;135%
+45;Indianapolis;Heavy cruiser (CA) CA;CA Guns;110%;DD Guns;60%;Anti-Air Guns;130%
+46;Astoria;Heavy cruiser (CA) CA;CA Guns;115%;DD Guns;60%;Anti-Air Guns;130%
+47;Quincy;Heavy cruiser (CA) CA;CA Guns;115%;DD Guns;65%;Anti-Air Guns;130%
+48;Vincennes;Heavy cruiser (CA) CA;CA Guns;115%;DD Guns;65%;Anti-Air Guns;130%
+49;Wichita;Heavy cruiser (CA) CA;CA Guns;130%;DD Guns;55%;Anti-Air Guns;105%
+50;Baltimore;Heavy cruiser (CA) CA;CA Guns;130%;DD Guns;75%;Anti-Air Guns;135%
+52;Nevada;Battleship (BB) BB;BB Guns;135%;DD Guns;215%;Anti-Air Guns;100%
+53;Oklahoma;Battleship (BB) BB;BB Guns;135%;DD Guns;215%;Anti-Air Guns;100%
+54;Pennsylvania;Battleship (BB) BB;BB Guns;130%;DD Guns;200%;Anti-Air Guns;100%
+55;Arizona;Battleship (BB) BB;BB Guns;130%;DD Guns;200%;Anti-Air Guns;100%
+58;Tennessee;Battleship (BB) BB;BB Guns;130%;DD Guns;200%;Anti-Air Guns;100%
+59;California;Battleship (BB) BB;BB Guns;130%;DD Guns;200%;Anti-Air Guns;100%
+60;Colorado;Battleship (BB) BB;BB Guns;130%;DD Guns;200%;Anti-Air Guns;100%
+61;Maryland;Battleship (BB) BB;BB Guns;125%;DD Guns;200%;Anti-Air Guns;100%
+62;West Virginia;Battleship (BB) BB;BB Guns;130%;DD Guns;200%;Anti-Air Guns;100%
+63;North Carolina;Battleship (BB) BB;BB Guns;130%;DD Guns;200%;Anti-Air Guns;100%
+64;Washington;Battleship (BB) BB;BB Guns;130%;DD Guns;200%;Anti-Air Guns;100%
+65;South Dakota;Battleship (BB) BB;BB Guns;130%;DD Guns;200%;Anti-Air Guns;100%
+68;New Jersey;Battleship (BB) BB;BB Guns;150%;DD Guns;210%;Anti-Air Guns;130%
+70;Long Island;Light aircraft carrier (CVL) CVL;Fighters;145%;Dive Bombers;130%;Anti-Air Guns;85%
+71;Bogue;Light aircraft carrier (CVL) CVL;Fighters;130%;Dive Bombers;145%;Anti-Air Guns;85%
+72;Langley;Light aircraft carrier (CVL) CVL;Fighters;145%;DD Guns (Fighters on LB1);145%;Dive Bombers;85%
+73;Lexington;Aircraft carrier (CV) CV;Fighters;120%;Dive Bombers;130%;Dive Bombers;130%
+74;Saratoga;Aircraft carrier (CV) CV;Fighters;125%;Dive Bombers;140%;Dive Bombers;140%
+75;Ranger;Light aircraft carrier (CVL) CVL;Torpedo Bombers;105%;Dive Bombers;145%;Dive Bombers;145%
+76;Yorktown;Aircraft carrier (CV) CV;Fighters;125%;Dive Bombers;125%;Torpedo Bombers;125%
+77;Enterprise;Aircraft carrier (CV) CV;Fighters;125%;Dive Bombers;125%;Torpedo Bombers;125%
+78;Hornet;Aircraft carrier (CV) CV;Fighters;125%;Dive Bombers;125%;Torpedo Bombers;125%
+79;Wasp;Aircraft carrier (CV) CV;Fighters;125%;Dive Bombers;125%;Torpedo Bombers;125%
+80;Vestal;Repair ship (AR) AR;Auxiliaries;100%;Anti-Air Guns;100%;Anti-Air Guns;100%
+81;Amazon;Destroyer (DD) DD;DD Guns;120%;Torpedoes;135%;Anti-Air Guns;115%
+82;Acasta;Destroyer (DD) DD;DD Guns;115%;Torpedoes;150%;Anti-Air Guns;110%
+83;Ardent;Destroyer (DD) DD;DD Guns;120%;Torpedoes;145%;Anti-Air Guns;110%
+86;Beagle;Destroyer (DD) DD;DD Guns;120%;Torpedoes;135%;Anti-Air Guns;105%
+87;Bulldog;Destroyer (DD) DD;DD Guns;120%;Torpedoes;135%;Anti-Air Guns;105%
+88;Comet;Destroyer (DD) DD;DD Guns;120%;Torpedoes;140%;Anti-Air Guns;110%
+89;Crescent;Destroyer (DD) DD;DD Guns;125%;Torpedoes;135%;Anti-Air Guns;110%
+90;Cygnet;Destroyer (DD) DD;DD Guns;125%;Torpedoes;135%;Anti-Air Guns;110%
+91;Foxhound;Destroyer (DD) DD;DD Guns;125%;Torpedoes;135%;Anti-Air Guns;110%
+92;Fortune;Destroyer (DD) DD;DD Guns;125%;Torpedoes;135%;Anti-Air Guns;110%
+93;Grenville;Destroyer (DD) DD;DD Guns;135%;Torpedoes;130%;Anti-Air Guns;105%
+94;Glowworm;Destroyer (DD) DD;DD Guns;130%;Torpedoes;135%;Anti-Air Guns;105%
+96;Hardy;Destroyer (DD) DD;DD Guns;130%;Torpedoes;135%;Anti-Air Guns;105%
+100;Hunter;Destroyer (DD) DD;DD Guns;125%;Torpedoes;130%;Anti-Air Guns;105%
+101;Javelin;Destroyer (DD) DD;DD Guns;125%;Torpedoes;155%;Anti-Air Guns;105%
+102;Juno;Destroyer (DD) DD;DD Guns;120%;Torpedoes;140%;Anti-Air Guns;105%
+103;Vampire;Destroyer (DD) DD;DD Guns;115%;Torpedoes;145%;Anti-Air Guns;105%
+104;Leander;Light cruiser (CL) CL;CL Guns;135%;Torpedoes;165%;Anti-Air Guns;130%
+105;Achilles;Light cruiser (CL) CL;CL Guns;160%;Torpedoes;160%;Anti-Air Guns;100%
+106;Ajax;Light cruiser (CL) CL;CL Guns;160%;Torpedoes;160%;Anti-Air Guns;100%
+107;Dido;Light cruiser (CL) CL;CL/DD Guns;140%;Torpedoes;130%;Anti-Air Guns;135%
+110;Southampton;Light cruiser (CL) CL;CL Guns;135%;Torpedoes;130%;Anti-Air Guns;110%
+111;Sheffield;Light cruiser (CL) CL;CL Guns;150%;Torpedoes;150%;Anti-Air Guns;110%
+113;Gloucester;Light cruiser (CL) CL;CL Guns;150%;Torpedoes;150%;Anti-Air Guns;110%
+114;Edinburgh;Light cruiser (CL) CL;CL Guns;150%;Torpedoes;155%;Anti-Air Guns;100%
+115;Belfast;Light cruiser (CL) CL;CL Guns;150%;Torpedoes;155%;Anti-Air Guns;100%
+116;Arethusa;Light cruiser (CL) CL;CL Guns;130%;Torpedoes;155%;Anti-Air Guns;130%
+117;Galatea;Light cruiser (CL) CL;CL Guns;130%;Torpedoes;155%;Anti-Air Guns;130%
+118;Aurora;Light cruiser (CL) CL;CL Guns;135%;Torpedoes;155%;Anti-Air Guns;130%
+119;London;Heavy cruiser (CA) CA;CA Guns;150%;Torpedoes / DD Guns (retrofit);160%;Anti-Air Guns;115%
+120;Shropshire;Heavy cruiser (CA) CA;CA Guns;145%;Torpedoes;160%;Anti-Air Guns;100%
+121;Kent;Heavy cruiser (CA) CA;CA Guns;145%;Torpedoes;160%;Anti-Air Guns;100%
+122;Suffolk;Heavy cruiser (CA) CA;CA Guns;160%;Torpedoes;165%;Anti-Air Guns;100%
+123;Norfolk;Heavy cruiser (CA) CA;CA Guns;125%;Torpedoes;160%;Anti-Air Guns;120%
+124;Dorsetshire;Heavy cruiser (CA) CA;CA Guns;125%;Torpedoes;150%;Anti-Air Guns;120%
+125;York;Heavy cruiser (CA) CA;CA Guns;155%;Torpedoes;165%;Anti-Air Guns;105%
+126;Exeter;Heavy cruiser (CA) CA;CA Guns;150%;Torpedoes;170%;Anti-Air Guns;115%
+127;Renown;Battlecruiser (BC) BC;BB Guns;135%;DD Guns;150%;Anti-Air Guns;70%
+128;Repulse;Battlecruiser (BC) BC;BB Guns;135%;DD Guns;150%;Anti-Air Guns;70%
+129;Hood;Battlecruiser (BC) BC;BB Guns;140%;DD Guns;150%;Anti-Air Guns;100%
+130;Queen Elizabeth;Battleship (BB) BB;BB Guns;130%;CL/DD Guns;200%;Anti-Air Guns;100%
+131;Warspite;Battleship (BB) BB;BB Guns;140%;CL/DD Guns;200%;Anti-Air Guns;115%
+132;Nelson;Battleship (BB) BB;BB Guns;130%;CL/DD Guns;200%;Anti-Air Guns;100%
+133;Rodney;Battleship (BB) BB;BB Guns;130%;CL/DD Guns;200%;Anti-Air Guns;100%
+134;King George V;Battleship (BB) BB;BB Guns;135%;CL/DD Guns;200%;Anti-Air Guns;100%
+135;Prince of Wales;Battleship (BB) BB;BB Guns;135%;CL/DD Guns;200%;Anti-Air Guns;100%
+136;Duke of York;Battleship (BB) BB;BB Guns;135%;CL/DD Guns;200%;Anti-Air Guns;100%
+140;Hermes;Light aircraft carrier (CVL) CVL;Torpedo Bombers;140%;Torpedo Bombers;140%;Anti-Air Guns;85%
+142;Unicorn;Light aircraft carrier (CVL) CVL;Fighters;130%;Torpedo Bombers;130%;Anti-Air Guns;80%
+143;Eagle;Aircraft carrier (CV) CV;Fighters;135%;Torpedo Bombers;140%;CL Guns / Dive Bombers;55%
+144;Ark Royal;Aircraft carrier (CV) CV;Torpedo Bombers;143%;Torpedo Bombers;143%;Dive Bombers;95%
+145;Illustrious;Aircraft carrier (CV) CV;Fighters;135%;Fighters;135%;Torpedo Bombers;110%
+146;Victorious;Aircraft carrier (CV) CV;Fighters;120%;Dive Bombers;130%;Torpedo Bombers;130%
+147;Formidable;Aircraft carrier (CV) CV;Fighters / Dive Bombers (MLB);120%;Torpedo Bombers;135%;Torpedo Bombers;125%
+148;Glorious;Aircraft carrier (CV) CV;Fighters;140%;Torpedo Bombers;115%;Torpedo Bombers;115%
+149;Erebus;Monitor (BM) BM;BB Guns;120%;DD Guns;200%;Anti-Air Guns;100%
+150;Terror;Monitor (BM) BM;BB Guns;120%;DD Guns;200%;Anti-Air Guns;100%
+151;Fubuki;Destroyer (DD) DD;DD Guns;75%;Torpedoes;160%;Anti-Air Guns;75%
+152;Shirayuki;Destroyer (DD) DD;DD Guns;75%;Torpedoes;160%;Anti-Air Guns;75%
+155;Ayanami;Destroyer (DD) DD;DD Guns;85%;Torpedoes;165%;Anti-Air Guns;75%
+159;Akatsuki;Destroyer (DD) DD;DD Guns;75%;Torpedoes;150%;Anti-Air Guns;75%
+160;Hibiki;Destroyer (DD) DD;DD Guns;75%;Torpedoes;155%;Anti-Air Guns;75%
+161;Ikazuchi;Destroyer (DD) DD;DD Guns;75%;Torpedoes;150%;Anti-Air Guns;75%
+162;Inazuma;Destroyer (DD) DD;DD Guns;75%;Torpedoes;150%;Anti-Air Guns;75%
+163;Shiratsuyu;Destroyer (DD) DD;DD Guns;75%;Torpedoes;150%;Anti-Air Guns;75%
+164;Yuudachi;Destroyer (DD) DD;DD Guns;100%;Torpedoes;160%;Anti-Air Guns;85%
+165;Shigure;Destroyer (DD) DD;DD Guns;85%;Torpedoes;165%;Anti-Air Guns;75%
+166;Yukikaze;Destroyer (DD) DD;DD Guns;75%;Torpedoes;150%;Anti-Air Guns;75%
+167;Kagerou;Destroyer (DD) DD;DD Guns;80%;Torpedoes;155%;Anti-Air Guns;75%
+168;Shiranui;Destroyer (DD) DD;DD Guns;80%;Torpedoes;165%;Anti-Air Guns;75%
+170;Nowaki;Destroyer (DD) DD;DD Guns;80%;Torpedoes;155%;Anti-Air Guns;75%
+171;Hatsuharu;Destroyer (DD) DD;DD Guns;75%;Torpedoes;155%;Anti-Air Guns;80%
+173;Wakaba;Destroyer (DD) DD;DD Guns;75%;Torpedoes;150%;Anti-Air Guns;75%
+174;Hatsushimo;Destroyer (DD) DD;DD Guns;75%;Torpedoes;155%;Anti-Air Guns;80%
+175;Ariake;Destroyer (DD) DD;DD Guns;75%;Torpedoes;155%;Anti-Air Guns;80%
+176;Yuugure;Destroyer (DD) DD;DD Guns;75%;Torpedoes;155%;Anti-Air Guns;80%
+177;Kuroshio;Destroyer (DD) DD;DD Guns;75%;Torpedoes;150%;Anti-Air Guns;75%
+178;Oyashio;Destroyer (DD) DD;DD Guns;75%;Torpedoes;150%;Anti-Air Guns;75%
+179;Yuubari;Light cruiser (CL) CL;CL Guns;125%;Torpedoes;165%;Anti-Air Guns;125%
+182;Nagara;Light cruiser (CL) CL;CL Guns;110%;Torpedoes;160%;Anti-Air Guns;125%
+183;Isuzu;Light cruiser (CL) CL;CL Guns / DD Guns (LB2);105%;Torpedoes;145%;Anti-Air Guns;175%
+185;Yura;Light cruiser (CL) CL;CL Guns;120%;Torpedoes;165%;Anti-Air Guns;125%
+186;Kinu;Light cruiser (CL) CL;CL Guns;120%;Torpedoes;180%;Anti-Air Guns;130%
+187;Abukuma;Light cruiser (CL) CL;CL Guns;115%;Torpedoes;175%;Anti-Air Guns;125%
+188;Mogami;Light cruiser (CL) CL;CL Guns (CA Guns on retrofit);125%;Torpedoes;160%;Anti-Air Guns;105%
+189;Mikuma;Light cruiser (CL) CL;CL Guns;110%;Torpedoes;160%;Anti-Air Guns;100%
+190;Furutaka;Heavy cruiser (CA) CA;CA Guns;130%;Torpedoes;180%;Anti-Air Guns;105%
+191;Kako;Heavy cruiser (CA) CA;CA Guns;130%;Torpedoes;180%;Anti-Air Guns;105%
+192;Aoba;Heavy cruiser (CA) CA;CA Guns;130%;Torpedoes;165%;Anti-Air Guns;100%
+193;Kinugasa;Heavy cruiser (CA) CA;CA Guns;130%;Torpedoes;165%;Anti-Air Guns;100%
+195;Chikuma;Heavy cruiser (CA) CA;CA Guns;130%;Torpedoes;175%;Anti-Air Guns;100%
+196;Myoukou;Heavy cruiser (CA) CA;CA Guns;130%;Torpedoes;165%;Anti-Air Guns;100%
+197;Nachi;Heavy cruiser (CA) CA;CA Guns;130%;Torpedoes;165%;Anti-Air Guns;100%
+198;Ashigara;Heavy cruiser (CA) CA;CA Guns;130%;Torpedoes;165%;Anti-Air Guns;100%
+200;Takao;Heavy cruiser (CA) CA;CA Guns;125%;Torpedoes;175%;Anti-Air Guns;100%
+201;Atago;Heavy cruiser (CA) CA;CA Guns;135%;Torpedoes;170%;Anti-Air Guns;100%
+202;Maya;Heavy cruiser (CA) CA;CA Guns;125%;Torpedoes;170%;Anti-Air Guns;120%
+203;Choukai;Heavy cruiser (CA) CA;CA Guns;125%;Torpedoes;130%;Anti-Air Guns;110%
+204;Kongou;Battlecruiser (BC) BC;BB Guns;135%;CL/DD Guns;150%;Anti-Air Guns;90%
+205;Hiei;Battlecruiser (BC) BC;BB Guns;135%;CL/DD Guns;150%;Anti-Air Guns;90%
+206;Haruna;Battlecruiser (BC) BC;BB Guns;135%;CL/DD Guns;150%;Anti-Air Guns;90%
+207;Kirishima;Battlecruiser (BC) BC;BB Guns;135%;CL/DD Guns;150%;Anti-Air Guns;90%
+208;Fusou;Battleship (BB) BB;BB Guns;165%;CL/DD Guns (Seaplanes on retrofit);200%;Anti-Air Guns;85%
+209;Yamashiro;Battleship (BB) BB;BB Guns;165%;CL/DD Guns (Seaplanes on retrofit);200%;Anti-Air Guns;85%
+210;Ise;Battleship (BB) BB;BB Guns;180%;CL/DD Guns (Seaplanes on retrofit);180%;Anti-Air Guns;95%
+211;Hyuuga;Battleship (BB) BB;BB Guns;175%;CL/DD Guns (Seaplanes on retrofit);200%;Anti-Air Guns;95%
+212;Nagato;Battleship (BB) BB;BB Guns;135%;CL/DD Guns;210%;Anti-Air Guns;100%
+213;Mutsu;Battleship (BB) BB;BB Guns;130%;CL/DD Guns;210%;Anti-Air Guns;100%
+214;Kii;Battleship (BB) BB;BB Guns;135%;CL/DD Guns;200%;Anti-Air Guns;100%
+215;Tosa;Battleship (BB) BB;BB Guns;135%;CL/DD Guns;200%;Anti-Air Guns;90%
+218;Hiyou;Light aircraft carrier (CVL) CVL;Fighters;100%;Dive Bombers;120%;Torpedo Bombers;110%
+219;Junyou;Light aircraft carrier (CVL) CVL;Fighters;100%;Dive Bombers;110%;Torpedo Bombers;120%
+220;Houshou;Light aircraft carrier (CVL) CVL;CL Guns;100%;Fighters;130%;Torpedo Bombers;130%
+222;Shouhou;Light aircraft carrier (CVL) CVL;Dive Bombers;145%;Torpedo Bombers;135%;Anti-Air Guns;80%
+223;Ryuujou;Light aircraft carrier (CVL) CVL;Fighters;130%;Torpedo Bombers;145%;Anti-Air Guns;80%
+224;Akagi;Aircraft carrier (CV) CV;Fighters;125%;Dive Bombers;125%;Torpedo Bombers;125%
+225;Kaga;Aircraft carrier (CV) CV;Fighters;110%;Dive Bombers;110%;Torpedo Bombers;150%
+226;Souryuu;Aircraft carrier (CV) CV;Fighters;125%;Dive Bombers;150%;Torpedo Bombers;115%
+227;Hiryuu;Aircraft carrier (CV) CV;Fighters;125%;Dive Bombers;115%;Torpedo Bombers;150%
+228;Shoukaku;Aircraft carrier (CV) CV;Fighters;110%;Dive Bombers;110%;Torpedo Bombers;150%
+229;Zuikaku;Aircraft carrier (CV) CV;Fighters;130%;Dive Bombers;125%;Torpedo Bombers;125%
+230;Taihou;Aircraft carrier (CV) CV;Fighters;120%;Dive Bombers;130%;Torpedo Bombers;140%
+231;Shinano;Aircraft carrier (CV) CV;Fighters / Dive Bombers (LB1) / Torpedo Bombers (LB1);125%;Dive Bombers;130%;Torpedo Bombers;140%
+232;Akashi;Repair ship (AR) AR;Auxiliaries;100%;Anti-Air Guns;100%;Anti-Air Guns;100%
+233;Z1;Destroyer (DD) DD;DD Guns;125%;Torpedoes;155%;Anti-Air Guns;85%
+236;Z23;Destroyer (DD) DD;CL/DD Guns;175%;Torpedoes;120%;Anti-Air Guns;85%
+237;Z25;Destroyer (DD) DD;CL/DD Guns;160%;Torpedoes;120%;Anti-Air Guns;75%
+238;Königsberg;Light cruiser (CL) CL;CL Guns;120%;Torpedoes;155%;Anti-Air Guns;130%
+239;Karlsruhe;Light cruiser (CL) CL;CL Guns;120%;Torpedoes;170%;Anti-Air Guns;135%
+240;Köln;Light cruiser (CL) CL;CL Guns;120%;Torpedoes;170%;Anti-Air Guns;135%
+241;Leipzig;Light cruiser (CL) CL;CL Guns;125%;Torpedoes;175%;Anti-Air Guns;135%
+242;Admiral Hipper;Heavy cruiser (CA) CA;CA Guns;130%;Torpedoes;160%;Anti-Air Guns;100%
+244;Prinz Eugen;Heavy cruiser (CA) CA;CA Guns;125%;Torpedoes;160%;Anti-Air Guns;120%
+245;Deutschland;Heavy cruiser (CA) CA;CA Guns;140%;Torpedoes;130%;Anti-Air Guns;100%
+246;Admiral Graf Spee;Heavy cruiser (CA) CA;CA Guns;140%;Torpedoes;130%;Anti-Air Guns;100%
+248;Scharnhorst;Battlecruiser (BC) BC;BB Guns;135%;CL/DD Guns;150%;Anti-Air Guns;70%
+249;Gneisenau;Battlecruiser (BC) BC;BB Guns;135%;CL/DD Guns;150%;Anti-Air Guns;70%
+250;Bismarck;Battleship (BB) BB;BB Guns;130%;CL/DD Guns;180%;Anti-Air Guns;90%
+251;Tirpitz;Battleship (BB) BB;BB Guns;130%;CL/DD Guns;200%;Anti-Air Guns;90%
+252;Graf Zeppelin;Aircraft carrier (CV) CV;Fighters;120%;Dive Bombers;130%;Dive Bombers / Torpedo Bombers (MLB);130%
+253;An Shan;Destroyer (DD) DD;DD Guns;155%;Torpedoes;100%;Anti-Air Guns;105%
+254;Fu Shun;Destroyer (DD) DD;DD Guns;155%;Torpedoes;100%;Anti-Air Guns;105%
+255;Chang Chun;Destroyer (DD) DD;DD Guns;155%;Torpedoes;100%;Anti-Air Guns;105%
+256;Tai Yuan;Destroyer (DD) DD;DD Guns;155%;Torpedoes;100%;Anti-Air Guns;105%
+257;Yat Sen;Light cruiser (CL) CL;CL Guns;130%;CL Guns;120%;Anti-Air Guns;80%
+258;Ning Hai;Light cruiser (CL) CL;CL Guns;145%;Torpedoes;155%;Anti-Air Guns;135%
+259;Ping Hai;Light cruiser (CL) CL;CL Guns;145%;Torpedoes;155%;Anti-Air Guns;135%
+262;Avrora;Light cruiser (CL) CL;CL Guns;130%;Torpedoes;125%;Anti-Air Guns;80%
+263;Bailey;Destroyer (DD) DD;DD Guns;135%;Torpedoes;135%;Anti-Air Guns;125%
+264;Z19;Destroyer (DD) DD;DD Guns;115%;Torpedoes;140%;Anti-Air Guns;75%
+265;Z20;Destroyer (DD) DD;DD Guns;115%;Torpedoes;140%;Anti-Air Guns;75%
+266;Z21;Destroyer (DD) DD;DD Guns;115%;Torpedoes;140%;Anti-Air Guns;75%
+267;Z46;Destroyer (DD) DD;DD Guns;160%;Torpedoes;120%;Anti-Air Guns;140%
+268;Shimakaze;Destroyer (DD) DD;DD Guns;85%;Torpedoes;170%;Anti-Air Guns;90%
+269;Kamikaze;Destroyer (DD) DD;DD Guns;75%;Torpedoes;145%;Anti-Air Guns;80%
+270;Matsukaze;Destroyer (DD) DD;DD Guns;75%;Torpedoes;145%;Anti-Air Guns;80%
+271;Mutsuki;Destroyer (DD) DD;DD Guns;75%;Torpedoes;150%;Anti-Air Guns;80%
+272;Kisaragi;Destroyer (DD) DD;DD Guns;75%;Torpedoes;150%;Anti-Air Guns;80%
+274;Uzuki;Destroyer (DD) DD;DD Guns;75%;Torpedoes;145%;Anti-Air Guns;75%
+276;Minazuki;Destroyer (DD) DD;DD Guns;75%;Torpedoes;145%;Anti-Air Guns;75%
+277;Fumizuki;Destroyer (DD) DD;DD Guns;75%;Torpedoes;145%;Anti-Air Guns;75%
+278;Nagatsuki;Destroyer (DD) DD;DD Guns;75%;Torpedoes;145%;Anti-Air Guns;75%
+280;Mikazuki;Destroyer (DD) DD;DD Guns;75%;Torpedoes;145%;Anti-Air Guns;75%
+286;Umikaze;Destroyer (DD) DD;DD Guns;75%;Torpedoes;150%;Anti-Air Guns;75%
+287;Yamakaze;Destroyer (DD) DD;DD Guns;75%;Torpedoes;150%;Anti-Air Guns;75%
+288;Kawakaze;Destroyer (DD) DD;DD Guns;85%;Torpedoes;150%;Anti-Air Guns;85%
+293;Kiyonami;Destroyer (DD) DD;DD Guns;75%;Torpedoes;150%;Anti-Air Guns;75%
+295;Niizuki;Destroyer (DD) DD;DD Guns;100%;Torpedoes;135%;Anti-Air Guns;135%
+296;Harutsuki;Destroyer (DD) DD;DD Guns;100%;Torpedoes;135%;Anti-Air Guns;135%
+297;Yoizuki;Destroyer (DD) DD;DD Guns;100%;Torpedoes;135%;Anti-Air Guns;135%
+299;Radford;Destroyer (DD) DD;DD Guns;120%;Torpedoes;130%;Anti-Air Guns;130%
+300;Jenkins;Destroyer (DD) DD;DD Guns;120%;Torpedoes;130%;Anti-Air Guns;130%
+30001;Hiryuu META;Aircraft carrier (CV) CV;Fighters;110%;Dive Bombers;110%;Torpedo Bombers;150%
+30002;Ark Royal META;Aircraft carrier (CV) CV;Torpedo Bombers;145%;Torpedo Bombers;140%;Dive Bombers;80%
+30003;Helena META;Light cruiser (CL) CL;CL Guns;135%;DD Guns;65%;Anti-Air Guns;100%
+30004;Souryuu META;Aircraft carrier (CV) CV;Fighters;110%;Dive Bombers;150%;Torpedo Bombers;120%
+30005;Fusou META;Battleship (BB) BB;BB Guns;130%;CL/DD Guns;200%;Anti-Air Guns;85%
+301;Nicholas;Destroyer (DD) DD;DD Guns;140%;Torpedoes;140%;Anti-Air Guns;130%
+303;Richmond;Light cruiser (CL) CL;CL Guns;120%;Torpedoes;155%;Anti-Air Guns;130%
+304;Honolulu;Light cruiser (CL) CL;CL Guns;135%;DD Guns;65%;Anti-Air Guns;100%
+305;St. Louis;Light cruiser (CL) CL;CL Guns;135%;DD Guns;65%;Anti-Air Guns;100%
+306;Jupiter;Destroyer (DD) DD;DD Guns;120%;Torpedoes;140%;Anti-Air Guns;105%
+307;Jersey;Destroyer (DD) DD;DD Guns;120%;Torpedoes;140%;Anti-Air Guns;105%
+308;Sendai;Light cruiser (CL) CL;CL Guns;125%;Torpedoes;180%;Anti-Air Guns;115%
+309;Jintsuu;Light cruiser (CL) CL;CL Guns;125%;Torpedoes;180%;Anti-Air Guns;115%
+310;Naka;Light cruiser (CL) CL;CL Guns;120%;Torpedoes;165%;Anti-Air Guns;115%
+316;Urakaze;Destroyer (DD) DD;DD Guns;75%;Torpedoes;150%;Anti-Air Guns;75%
+317;Isokaze;Destroyer (DD) DD;DD Guns;75%;Torpedoes;150%;Anti-Air Guns;75%
+318;Hamakaze;Destroyer (DD) DD;DD Guns;80%;Torpedoes;165%;Anti-Air Guns;75%
+319;Tanikaze;Destroyer (DD) DD;DD Guns;80%;Torpedoes;165%;Anti-Air Guns;75%
+320;Mikasa;Battleship (BB) BB;BB Guns;130%;CL/DD Guns;150%;DD Guns;150%
+321;Agano;Light cruiser (CL) CL;CL Guns;100%;Torpedoes;170%;Anti-Air Guns;100%
+322;Noshiro;Light cruiser (CL) CL;CL Guns;125%;Torpedoes;175%;Anti-Air Guns;110%
+325;Matchless;Destroyer (DD) DD;DD Guns;120%;Torpedoes;145%;Anti-Air Guns;100%
+326;Musketeer;Destroyer (DD) DD;DD Guns;120%;Torpedoes;145%;Anti-Air Guns;100%
+327;Fiji;Light cruiser (CL) CL;CL Guns;140%;Torpedoes;155%;Anti-Air Guns;110%
+328;Jamaica;Light cruiser (CL) CL;CL Guns;140%;Torpedoes;155%;Anti-Air Guns;110%
+329;Montpelier;Light cruiser (CL) CL;CL Guns;130%;DD Guns;75%;Anti-Air Guns;120%
+330;Denver;Light cruiser (CL) CL;CL Guns;125%;DD Guns;70%;Anti-Air Guns;120%
+331;Asashio;Destroyer (DD) DD;DD Guns;75%;Torpedoes;150%;Anti-Air Guns;75%
+332;Ooshio;Destroyer (DD) DD;DD Guns;75%;Torpedoes;150%;Anti-Air Guns;75%
+333;Michishio;Destroyer (DD) DD;DD Guns;75%;Torpedoes;150%;Anti-Air Guns;75%
+334;Arashio;Destroyer (DD) DD;DD Guns;75%;Torpedoes;150%;Anti-Air Guns;75%
+335;Little Bel;Light cruiser (CL) CL;CL Guns;140%;Torpedoes;150%;Anti-Air Guns;100%
+336;Abercrombie;Monitor (BM) BM;BB Guns;120%;DD Guns;205%;Anti-Air Guns;100%
+337;Sussex;Heavy cruiser (CA) CA;CA Guns;145%;Torpedoes;160%;Anti-Air Guns;100%
+338;I-19;Submarine (SS) SS;Submarine Torpedoes;135%;Submarine Torpedoes;115%;DD Guns;80%
+339;I-26;Submarine (SS) SS;Submarine Torpedoes;130%;Submarine Torpedoes;115%;DD Guns;85%
+340;I-58;Submarine (SS) SS;Submarine Torpedoes;120%;Submarine Torpedoes;115%;DD Guns;85%
+341;U-81;Submarine (SS) SS;Submarine Torpedoes;130%;Submarine Torpedoes;125%;DD Guns;85%
+342;Dace;Submarine (SS) SS;Submarine Torpedoes;125%;Submarine Torpedoes;120%;DD Guns;90%
+343;U-47;Submarine (SS) SS;Submarine Torpedoes;125%;Submarine Torpedoes;125%;DD Guns;85%
+344;U-557;Submarine (SS) SS;Submarine Torpedoes;125%;Submarine Torpedoes;120%;DD Guns;85%
+345;Z35;Destroyer (DD) DD;DD Guns;150%;Torpedoes;120%;Anti-Air Guns;125%
+346;Z18;Destroyer (DD) DD;DD Guns;115%;Torpedoes;140%;Anti-Air Guns;75%
+347;Le Triomphant;Destroyer (DD) DD;DD Guns;140%;Torpedoes;125%;Anti-Air Guns;145%
+348;Forbin;Destroyer (DD) DD;DD Guns;120%;Torpedoes;145%;Anti-Air Guns;80%
+349;Émile Bertin;Light cruiser (CL) CL;CL Guns;145%;Torpedoes;155%;Anti-Air Guns;115%
+350;Surcouf;Submarine (SS) SS;Submarine Torpedoes;115%;Submarine Torpedoes;115%;Submarine-mounted 203mm Gun;120%
+351;Le Mars;Destroyer (DD) DD;DD Guns;120%;Torpedoes;145%;Anti-Air Guns;80%
+352;Dunkerque;Battlecruiser (BC) BC;BB Guns;170%;DD Guns;150%;Anti-Air Guns;70%
+353;Jean Bart;Battleship (BB) BB;BB Guns;160%;CL/DD Guns;200%;Anti-Air Guns;70%
+354;Massachusetts;Battleship (BB) BB;BB Guns;130%;DD Guns;200%;Anti-Air Guns;100%
+355;Bush;Destroyer (DD) DD;DD Guns;120%;Torpedoes;130%;Anti-Air Guns;135%
+356;Centaur;Light aircraft carrier (CVL) CVL;Fighters;125%;Fighters;120%;Torpedo Bombers;140%
+357;Essex;Aircraft carrier (CV) CV;Fighters;140%;Dive Bombers;130%;Torpedo Bombers;120%
+358;Albacore;Submarine (SS) SS;Submarine Torpedoes;130%;Submarine Torpedoes;120%;DD Guns;90%
+359;Le Téméraire;Destroyer (DD) DD;DD Guns;130%;Torpedoes;115%;Anti-Air Guns;75%
+360;Memphis;Light cruiser (CL) CL;CL Guns;125%;Torpedoes;155%;Anti-Air Guns;125%
+361;Newcastle;Light cruiser (CL) CL;CL Guns;155%;Torpedoes;125%;Anti-Air Guns;145%
+362;Hobby;Destroyer (DD) DD;DD Guns;130%;Torpedoes;130%;Anti-Air Guns;125%
+363;Kalk;Destroyer (DD) DD;DD Guns;130%;Torpedoes;130%;Anti-Air Guns;125%
+364;Minneapolis;Heavy cruiser (CA) CA;CA Guns;125%;DD Guns;70%;Anti-Air Guns;125%
+365;Hazelwood;Destroyer (DD) DD;DD Guns;120%;Torpedoes;130%;Anti-Air Guns;130%
+366;Concord;Light cruiser (CL) CL;CL Guns;125%;Torpedoes;150%;Anti-Air Guns;130%
+367;Amagi;Battlecruiser (BC) BC;BB Guns;135%;CL/DD Guns;180%;Anti-Air Guns;90%
+368;Kaga (Battleship);Battleship (BB) BB;BB Guns;135%;CL/DD Guns;200%;Anti-Air Guns;90%
+369;Hatakaze;Destroyer (DD) DD;DD Guns;75%;Torpedoes;140%;Anti-Air Guns;75%
+370;Makinami;Destroyer (DD) DD;DD Guns;80%;Torpedoes;155%;Anti-Air Guns;75%
+371;Sirius;Light cruiser (CL) CL;CL/DD Guns;135%;Torpedoes;130%;Anti-Air Guns;130%
+372;Curacoa;Light cruiser (CL) CL;CL/DD Guns;120%;Anti-Air Guns;90%;Anti-Air Guns;90%
+373;Curlew;Light cruiser (CL) CL;CL/DD Guns;115%;Anti-Air Guns;90%;Anti-Air Guns;90%
+374;Kimberly;Destroyer (DD) DD;DD Guns;120%;Torpedoes;130%;Anti-Air Guns;130%
+375;Mullany;Destroyer (DD) DD;DD Guns;125%;Torpedoes;130%;Anti-Air Guns;130%
+376;Chaser;Light aircraft carrier (CVL) CVL;Fighters;130%;Torpedo Bombers;145%;Anti-Air Guns;80%
+377;Independence;Light aircraft carrier (CVL) CVL;Fighters;145%;Torpedo Bombers;150%;Anti-Air Guns;80%
+378;Shangri-La;Aircraft carrier (CV) CV;Fighters;140%;Dive Bombers;130%;Torpedo Bombers;115%
+379;Z2;Destroyer (DD) DD;DD Guns;125%;Torpedoes;140%;Anti-Air Guns;75%
+380;Bunker Hill;Aircraft carrier (CV) CV;Fighters;140%;Dive Bombers;130%;Torpedo Bombers;115%
+381;I-13;Submarine carrier (SSV) SSV;Submarine Torpedoes;135%;Submarine Torpedoes;115%;Seaplanes;150%
+382;Suzuya;Heavy cruiser (CA) CA;CA/CL Guns;135%;Torpedoes;145%;Anti-Air Guns;110%
+383;Hiei-chan;Battlecruiser (BC) BC;BB Guns;130%;CL/DD Guns;150%;Anti-Air Guns;85%
+384;Akagi-chan;Aircraft carrier (CV) CV;Fighters;125%;Dive Bombers;115%;Torpedo Bombers;125%
+385;Zeppy;Aircraft carrier (CV) CV;Fighters;115%;Dive Bombers;130%;CL Guns / Dive Bombers;100%
+386;U-556;Submarine (SS) SS;Submarine Torpedoes;125%;Submarine Torpedoes;120%;DD Guns;85%
+387;U-73;Submarine (SS) SS;Submarine Torpedoes;125%;Submarine Torpedoes;120%;DD Guns;85%
+388;Z36;Destroyer (DD) DD;DD Guns;145%;Torpedoes;125%;Anti-Air Guns;125%
+389;Echo;Destroyer (DD) DD;DD Guns;120%;Torpedoes;140%;Anti-Air Guns;105%
+390;Lena;Light cruiser (CL) CL;CL Guns;135%;DD Guns;65%;Anti-Air Guns;100%
+391;Clevelad;Light cruiser (CL) CL;CL Guns;120%;DD Guns;65%;Anti-Air Guns;120%
+392;Li'l Sandy;Light cruiser (CL) CL;CL/DD Guns;100%;Torpedoes;115%;Anti-Air Guns;165%
+393;Swiftsure;Light cruiser (CL) CL;CL Guns;155%;Torpedoes;155%;Anti-Air Guns;110%
+394;Le Malin;Destroyer (DD) DD;DD Guns;150%;Torpedoes;125%;Anti-Air Guns;120%
+395;L'Opiniâtre;Destroyer (DD) DD;DD Guns;130%;Torpedoes;135%;Anti-Air Guns;75%
+396;I-25;Submarine (SS) SS;Submarine Torpedoes;130%;Submarine Torpedoes;115%;DD Guns;85%
+397;I-56;Submarine (SS) SS;Submarine Torpedoes;115%;Submarine Torpedoes;115%;DD Guns;85%
+398;I-168;Submarine (SS) SS;Submarine Torpedoes;130%;Submarine Torpedoes;115%;DD Guns;80%
+399;U-101;Submarine (SS) SS;Submarine Torpedoes;125%;Submarine Torpedoes;125%;DD Guns;85%
+400;U-522;Submarine (SS) SS;Submarine Torpedoes;125%;Submarine Torpedoes;120%;DD Guns;85%
+401;Alabama;Battleship (BB) BB;BB Guns;130%;DD Guns;200%;Anti-Air Guns;100%
+402;Cavalla;Submarine (SS) SS;Submarine Torpedoes;125%;Submarine Torpedoes;125%;DD Guns;85%
+403;Bataan;Light aircraft carrier (CVL) CVL;Fighters;125%;Torpedo Bombers;155%;Anti-Air Guns;80%
+404;San Juan;Light cruiser (CL) CL;CL/DD Guns;105%;Torpedoes;135%;Anti-Air Guns;160%
+405;Birmingham;Light cruiser (CL) CL;CL Guns;130%;DD Guns;65%;Anti-Air Guns;130%
+406;Aylwin;Destroyer (DD) DD;DD Guns;120%;Torpedoes;130%;Anti-Air Guns;130%
+407;Bache;Destroyer (DD) DD;DD Guns;120%;Torpedoes;130%;Anti-Air Guns;130%
+408;Black Prince;Light cruiser (CL) CL;CL/DD Guns;135%;Torpedoes;130%;Anti-Air Guns;135%
+409;Stanly;Destroyer (DD) DD;DD Guns;120%;Torpedoes;130%;Anti-Air Guns;135%
+410;Littorio;Battleship (BB) BB;BB Guns;130%;CL/DD Guns;200%;Anti-Air Guns;100%
+411;Conte di Cavour;Battleship (BB) BB;BB Guns;125%;DD Guns;150%;Anti-Air Guns;70%
+412;Giulio Cesare;Battleship (BB) BB;BB Guns;125%;DD Guns;150%;Anti-Air Guns;70%
+413;Zara;Heavy cruiser (CA) CA;CA Guns;120%;DD Guns;55%;Anti-Air Guns;100%
+414;Trento;Heavy cruiser (CA) CA;CA Guns;130%;Torpedoes;165%;Anti-Air Guns;100%
+415;Carabiniere;Destroyer (DD) DD;DD Guns;160%;Torpedoes;120%;Anti-Air Guns;75%
+416;U-110;Submarine (SS) SS;Submarine Torpedoes;125%;Submarine Torpedoes;120%;DD Guns;85%
+417;Smalley;Destroyer (DD) DD;DD Guns;120%;Torpedoes;130%;Anti-Air Guns;135%
+418;Gascogne µ;Battleship (BB) BB;BB Guns;170%;CL/DD Guns;200%;Anti-Air Guns;70%
+419;Akagi µ;Aircraft carrier (CV) CV;Fighters;125%;Dive Bombers;125%;Torpedo Bombers;125%
+420;Cleveland µ;Light cruiser (CL) CL;CL Guns;130%;DD Guns;70%;Anti-Air Guns;120%
+421;Sheffield µ;Light cruiser (CL) CL;CL Guns;150%;Torpedoes;150%;Anti-Air Guns;110%
+422;Admiral Hipper µ;Heavy cruiser (CA) CA;CA Guns;130%;Torpedoes;160%;Anti-Air Guns;100%
+423;Glasgow;Light cruiser (CL) CL;CL Guns;135%;Torpedoes;130%;Anti-Air Guns;135%
+424;Kasumi;Destroyer (DD) DD;DD Guns;85%;Torpedoes;155%;Anti-Air Guns;75%
+425;Suruga;Battleship (BB) BB;BB Guns;135%;CL/DD Guns;200%;Anti-Air Guns;100%
+426;Ryuuhou;Light aircraft carrier (CVL) CVL;Fighters;130%;Torpedo Bombers;145%;Anti-Air Guns;80%
+427;Halsey Powell;Destroyer (DD) DD;DD Guns;120%;Torpedoes;130%;Anti-Air Guns;135%
+428;Biloxi;Light cruiser (CL) CL;CL Guns;130%;DD Guns;70%;Anti-Air Guns;120%
+429;Uranami;Destroyer (DD) DD;DD Guns;75%;Torpedoes;160%;Anti-Air Guns;75%
+431;Grozny;Destroyer (DD) DD;DD Guns;155%;Torpedoes;100%;Anti-Air Guns;110%
+432;Minsk;Destroyer (DD) DD;DD Guns;155%;Torpedoes;110%;Anti-Air Guns;100%
+433;Tashkent;Destroyer (DD) DD;DD Guns;165%;Torpedoes;125%;Anti-Air Guns;105%
+434;Pamiat Merkuria;Light cruiser (CL) CL;CL Guns (DD Guns on retrofit);125%;Torpedoes;125%;Anti-Air Guns;90%
+435;Kirov;Light cruiser (CL) CL;CL Guns;150%;Torpedoes;135%;Anti-Air Guns;110%
+436;Chapayev;Light cruiser (CL) CL;CL Guns;130%;DD Guns;75%;Anti-Air Guns;120%
+437;Gangut;Battleship (BB) BB;BB Guns;110%;CL/DD Guns;200%;Anti-Air Guns;100%
+440;Sovetskaya Belorussiya;Battleship (BB) BB;BB Guns;135%;CL/DD Guns;200%;Anti-Air Guns;110%
+441;Sovetskaya Rossiya;Battleship (BB) BB;BB Guns;135%;CL/DD Guns;200%;Anti-Air Guns;100%
+442;Intrepid;Aircraft carrier (CV) CV;Fighters;140%;Dive Bombers;130%;Torpedo Bombers;120%
+443;Bremerton;Heavy cruiser (CA) CA;CA Guns;125%;DD Guns;70%;Anti-Air Guns;140%
+444;Cooper;Destroyer (DD) DD;DD Guns;125%;Torpedoes;135%;Anti-Air Guns;130%
+445;Reno;Light cruiser (CL) CL;CL/DD Guns;130%;Torpedoes;140%;Anti-Air Guns;170%
+446;Bluegill;Submarine (SS) SS;Submarine Torpedoes;125%;Submarine Torpedoes;120%;DD Guns;90%
+447;Casablanca;Light aircraft carrier (CVL) CVL;Fighters;135%;Torpedo Bombers;135%;Anti-Air Guns;100%
+448;Marblehead;Light cruiser (CL) CL;CL Guns;125%;Torpedoes;150%;Anti-Air Guns;130%
+449;Hanazuki;Destroyer (DD) DD;DD Guns;105%;Torpedoes;135%;Anti-Air Guns;135%
+450;Naganami;Destroyer (DD) DD;DD Guns;80%;Torpedoes;155%;Anti-Air Guns;75%
+451;Little Renown;Battlecruiser (BC) BC;BB Guns;135%;DD Guns;150%;Anti-Air Guns;70%
+452;Tartu;Destroyer (DD) DD;DD Guns;140%;Torpedoes;140%;Anti-Air Guns;75%
+453;Richelieu;Battleship (BB) BB;BB Guns;160%;CL/DD Guns;200%;Anti-Air Guns;100%
+454;Jeanne d'Arc;Light cruiser (CL) CL;CL Guns;135%;Torpedoes;145%;Anti-Air Guns;100%
+455;Algérie;Heavy cruiser (CA) CA;CA Guns;125%;Torpedoes;175%;Anti-Air Guns;100%
+456;La Galissonnière;Light cruiser (CL) CL;CL Guns;135%;Torpedoes;150%;Anti-Air Guns;100%
+457;Vauquelin;Destroyer (DD) DD;DD Guns;140%;Torpedoes;140%;Anti-Air Guns;75%
+458;Béarn;Aircraft carrier (CV) CV;Fighters;135%;Torpedo Bombers;140%;CL Guns / Dive Bombers;55%
+459;Little Illustrious;Aircraft carrier (CV) CV;Fighters;125%;Fighters;125%;Torpedo Bombers;120%
+460;Eskimo;Destroyer (DD) DD;DD Guns;100%;Torpedoes;135%;Anti-Air Guns;100%
+461;Howe;Battleship (BB) BB;BB Guns;140%;CL/DD Guns;200%;Anti-Air Guns;100%
+462;Perseus;Light aircraft carrier (CVL) CVL;Fighters;100%;Torpedo Bombers;100%;Anti-Air Guns;110%
+463;Hermione;Light cruiser (CL) CL;CL/DD Guns;140%;Torpedoes;130%;Anti-Air Guns;130%
+464;Valiant;Battleship (BB) BB;BB Guns;130%;CL/DD Guns;200%;Anti-Air Guns;100%
+465;Icarus;Destroyer (DD) DD;DD Guns;120%;Torpedoes;145%;Anti-Air Guns;100%
+466;Z26;Destroyer (DD) DD;CL/DD Guns;160%;Torpedoes;120%;Anti-Air Guns;75%
+467;U-96;Submarine (SS) SS;Submarine Torpedoes;125%;Submarine Torpedoes;125%;DD Guns;85%
+468;Suzutsuki;Destroyer (DD) DD;DD Guns;110%;Torpedoes;135%;Anti-Air Guns;145%
+469;Kumano;Heavy cruiser (CA) CA;CA/CL Guns;135%;Torpedoes;145%;Anti-Air Guns;110%
+470;Chitose;Light aircraft carrier (CVL) CVL;Fighters;130%;Torpedo Bombers;145%;Anti-Air Guns;80%
+471;Chiyoda;Light aircraft carrier (CVL) CVL;Fighters;130%;Torpedo Bombers;145%;Anti-Air Guns;80%
+472;Kashino;Munition ship (AE) AE;DD Guns;110%;Anti-Air Guns;80%;Auxiliaries / Cargo;100%
+473;Princeton;Light aircraft carrier (CVL) CVL;Fighters;125%;Torpedo Bombers;155%;Anti-Air Guns;80%
+474;Taihou µ;Aircraft carrier (CV) CV;Fighters;120%;Dive Bombers;130%;Torpedo Bombers;140%
+475;Tashkent µ;Destroyer (DD) DD;DD Guns;165%;Torpedoes;125%;Anti-Air Guns;105%
+476;Dido µ;Light cruiser (CL) CL;CL/DD Guns;135%;Torpedoes;130%;Anti-Air Guns;140%
+477;Albacore µ;Submarine (SS) SS;Submarine Torpedoes;125%;Submarine Torpedoes;120%;DD Guns;90%
+478;Baltimore µ;Heavy cruiser (CA) CA;CA Guns;125%;DD Guns;55%;Anti-Air Guns;135%
+479;Roon µ;Heavy cruiser (CA) CA;CA Guns;130%;Torpedoes;110%;Anti-Air Guns;110%
+480;Illustrious µ;Aircraft carrier (CV) CV;Fighters;125%;Fighters;125%;Torpedo Bombers;135%
+481;Le Malin µ;Destroyer (DD) DD;DD Guns;150%;Torpedoes;125%;Anti-Air Guns;120%
+482;Peter Strasser;Aircraft carrier (CV) CV;Fighters;120%;Dive Bombers;130%;Torpedo Bombers;140%
+483;Prinz Heinrich;Heavy cruiser (CA) CA;CA Guns;160%;Torpedoes;130%;Anti-Air Guns;100%
+484;U-37;Submarine (SS) SS;Submarine Torpedoes;125%;Submarine Torpedoes;125%;DD Guns;85%
+485;Weser;Light aircraft carrier (CVL) CVL;Fighters;130%;Dive Bombers;145%;Anti-Air Guns;80%
+486;Nürnberg;Light cruiser (CL) CL;CL Guns;125%;Torpedoes;170%;Anti-Air Guns;140%
+487;Z24;Destroyer (DD) DD;CL/DD Guns;160%;Torpedoes;120%;Anti-Air Guns;75%
+488;Z28;Destroyer (DD) DD;CL/DD Guns;160%;Torpedoes;120%;Anti-Air Guns;75%
+489;Pola;Heavy cruiser (CA) CA;CA Guns;125%;DD Guns;60%;Anti-Air Guns;100%
+490;Vincenzo Gioberti;Destroyer (DD) DD;DD Guns;125%;Torpedoes;130%;Anti-Air Guns;105%
+491;Stremitelny;Destroyer (DD) DD;DD Guns;155%;Torpedoes;100%;Anti-Air Guns;110%
+492;U-410;Submarine (SS) SS;Submarine Torpedoes;125%;Submarine Torpedoes;120%;DD Guns;85%
+493;Ying Swei;Light cruiser (CL) CL;CL Guns;100%;DD Guns;90%;Torpedoes;80%
+494;Chao Ho;Light cruiser (CL) CL;CL Guns;100%;DD Guns;90%;Torpedoes;80%
+495;Penelope;Light cruiser (CL) CL;CL Guns;135%;Torpedoes;155%;Anti-Air Guns;130%
+496;Tallinn;Heavy cruiser (CA) CA;CA/CL Guns;155%;Torpedoes;125%;Anti-Air Guns;115%
+497;Gremyashchy;Destroyer (DD) DD;DD Guns;160%;Torpedoes;110%;Anti-Air Guns;110%
+498;Murmansk;Light cruiser (CL) CL;CL Guns;120%;Torpedoes;155%;Anti-Air Guns;130%
+499;Gromky;Destroyer (DD) DD;DD Guns;155%;Torpedoes;100%;Anti-Air Guns;110%
+500;Vittorio Veneto;Battleship (BB) BB;BB Guns;130%;CL/DD Guns;200%;Anti-Air Guns;100%
+501;Duca degli Abruzzi;Light cruiser (CL) CL;CL Guns;125%;Torpedoes;160%;Anti-Air Guns;110%
+502;Aquila;Aircraft carrier (CV) CV;Fighters;120%;Fighters / Dive Bombers (MLB);120%;Torpedo Bombers;130%
+503;Torricelli;Submarine (SS) SS;Submarine Torpedoes;125%;Submarine Torpedoes;120%;DD Guns;85%
+504;Maestrale;Destroyer (DD) DD;DD Guns;140%;Torpedoes;130%;Anti-Air Guns;110%
+505;Libeccio;Destroyer (DD) DD;DD Guns;140%;Torpedoes;130%;Anti-Air Guns;110%
+506;Nicoloso da Recco;Destroyer (DD) DD;DD Guns;150%;Torpedoes;120%;Anti-Air Guns;85%
+507;Oite;Destroyer (DD) DD;DD Guns;75%;Torpedoes;140%;Anti-Air Guns;75%
+508;Allen M. Sumner;Destroyer (DD) DD;DD Guns;135%;Torpedoes;135%;Anti-Air Guns;160%
+509;Stephen Potter;Destroyer (DD) DD;DD Guns;120%;Torpedoes;130%;Anti-Air Guns;130%
+510;Amagi-chan;Battlecruiser (BC) BC;BB Guns;130%;CL/DD Guns;150%;Anti-Air Guns;85%
+511;Ticonderoga;Aircraft carrier (CV) CV;Fighters;140%;Dive Bombers;130%;Torpedo Bombers;120%
+512;San Francisco;Heavy cruiser (CA) CA;CA Guns;125%;DD Guns;75%;Anti-Air Guns;125%
+513;Archerfish;Submarine (SS) SS;Submarine Torpedoes;130%;Submarine Torpedoes;130%;DD Guns;85%
+514;Boise;Light cruiser (CL) CL;CL Guns;130%;DD Guns;65%;Anti-Air Guns;100%
+515;Morrison;Destroyer (DD) DD;DD Guns;125%;Torpedoes;130%;Anti-Air Guns;130%
+516;Little Enterprise;Aircraft carrier (CV) CV;Fighters;125%;Dive Bombers;125%;Torpedo Bombers;125%
+517;Kazagumo;Destroyer (DD) DD;DD Guns;85%;Torpedoes;160%;Anti-Air Guns;80%
+518;Ingraham;Destroyer (DD) DD;DD Guns;135%;Torpedoes;135%;Anti-Air Guns;180%
+519;Nautilus;Submarine (SS) SS;Submarine Torpedoes;125%;Submarine Torpedoes;120%;CL/DD Guns;90%
+520;Katsuragi;Aircraft carrier (CV) CV;Fighters;125%;Dive Bombers;115%;Torpedo Bombers;135%
+521;New Orleans;Heavy cruiser (CA) CA;CA Guns;125%;DD Guns;70%;Anti-Air Guns;125%
+522;Le Terrible;Destroyer (DD) DD;DD Guns;150%;Torpedoes;125%;Anti-Air Guns;120%
+523;Maillé Brézé;Destroyer (DD) DD;DD Guns;140%;Torpedoes;140%;Anti-Air Guns;75%
+Plan001;Neptune;Light cruiser (CL) CL;CL Guns;150%;Torpedoes;160%;Anti-Air Guns;100%
+Plan002;Monarch;Battleship (BB) BB;BB Guns;145%;CL/DD Guns;210%;Anti-Air Guns;110%
+Plan003;Ibuki;Heavy cruiser (CA) CA;CA Guns;140%;Torpedoes;185%;Anti-Air Guns;110%
+Plan004;Izumo;Battleship (BB) BB;BB Guns;140%;CL/DD Guns;210%;Anti-Air Guns;90%
+Plan005;Roon;Heavy cruiser (CA) CA;CA Guns;130%;Torpedoes;110%;Anti-Air Guns;110%
+Plan006;Saint Louis;Heavy cruiser (CA) CA;CA Guns;130%;Torpedoes;120%;Anti-Air Guns;125%
+Plan007;Seattle;Light cruiser (CL) CL;CL Guns;145%;CL Guns / Anti-Air Guns;65%;Anti-Air Guns;130%
+Plan008;Georgia;Battleship (BB) BB;BB Guns;165%;DD Guns;200%;Anti-Air Guns;110%
+Plan009;Kitakaze;Destroyer (DD) DD;DD Guns;105%;Torpedoes;135%;Anti-Air Guns;135%
+Plan010;Azuma;Large cruiser (CB) CB;CA/CB Guns;100%;DD Guns;60%;Anti-Air Guns;110%
+Plan011;Friedrich der Große;Battleship (BB) BB;BB Guns;160%;CL/DD Guns;220%;Anti-Air Guns;100%
+Plan012;Gascogne;Battleship (BB) BB;BB Guns;180%;CL/DD Guns;200%;Anti-Air Guns;80%
+Plan013;Cheshire;Heavy cruiser (CA) CA;CA Guns;140%;Torpedoes;155%;Anti-Air Guns;165%
+Plan014;Drake;Heavy cruiser (CA) CA;CA Guns;130%;Torpedoes;120%;Anti-Air Guns;125%
+Plan015;Mainz;Light cruiser (CL) CL;CL Guns;130%;Torpedoes;110%;Anti-Air Guns;110%
+Plan016;Odin;Battlecruiser (BC) BC;BB Guns;140%;Torpedoes;200%;Anti-Air Guns;110%
+Plan017;Champagne;Battleship (BB) BB;BB Guns;180%;CL/DD Guns;200%;Anti-Air Guns;80%
+Plan018;Anchorage;Heavy cruiser (CA) CA;CA Guns;130%;Torpedoes;115%;Anti-Air Guns;115%
+Plan019;Hakuryuu;Aircraft carrier (CV) CV;Fighters / Torpedo Bombers (Dev.10);125%;Dive Bombers;150%;Torpedo Bombers / Dive Bombers (Dev.30);130%
+Plan020;Ägir;Large cruiser (CB) CB;CA/CB Guns;120%;Torpedoes;110%;Anti-Air Guns;110%
+Plan021;August von Parseval;Aircraft carrier (CV) CV;Fighters;140%;Dive Bombers;110%;Torpedo Bombers;140%
+Plan022;Marco Polo;Battleship (BB) BB;BB Guns;145%;CL/DD Guns;200%;Anti-Air Guns;120%
+10061;Marie Rose;Destroyer (DD) DD;DD Guns;125%;Torpedoes;140%;Anti-Air Guns;115%
+10062;Honoka;Battleship (BB) BB;BB Guns;135%;CL/DD Guns;200%;Anti-Air Guns;100%
+10063;Kasumi (Venus Vacation);Heavy cruiser (CA) CA;CA Guns;135%;Torpedoes;165%;Anti-Air Guns;105%
+10064;Misaki;Light cruiser (CL) CL;CL Guns;130%;DD Guns;70%;Anti-Air Guns;110%
+10065;Nagisa;Battleship (BB) BB;BB Guns;130%;CL/DD Guns;200%;Anti-Air Guns;100%
+10066;Nyotengu;Aircraft carrier (CV) CV;Fighters;120%;Dive Bombers;125%;Torpedo Bombers;135%
+10067;Monica;Light cruiser (CL) CL;CL Guns;135%;Torpedoes;160%;Anti-Air Guns;110%
+10071;Haruka Amami;Light cruiser (CL) CL;CL Guns;155%;Torpedoes;155%;Anti-Air Guns;110%
+10072;Chihaya Kisaragi;Aircraft carrier (CV) CV;Fighters;110%;Dive Bombers;120%;Torpedo Bombers;140%
+10073;Iori Minase;Battleship (BB) BB;BB Guns;135%;DD Guns;200%;Anti-Air Guns;100%
+10074;Azusa Miura;Heavy cruiser (CA) CA;CA Guns;120%;DD Guns;65%;Anti-Air Guns;115%
+10075;Ritsuko Akizuki;Munition ship (AE) AE;DD Guns;110%;Anti-Air Guns;110%;Auxiliaries / Cargo;100%
+10076;Ami Futami;Submarine (SS) SS;Submarine Torpedoes;125%;Submarine Torpedoes;120%;DD Guns;85%
+10077;Mami Futami;Submarine (SS) SS;Submarine Torpedoes;120%;Submarine Torpedoes;125%;DD Guns;85%
+Collab001;Neptune (Neptunia);Light cruiser (CL) CL;CL Guns;140%;Torpedoes;150%;Anti-Air Guns;100%
+Collab002;Noire;Heavy cruiser (CA) CA;CA Guns;125%;Torpedoes;165%;Anti-Air Guns;110%
+Collab003;Blanc;Destroyer (DD) DD;DD Guns;75%;Torpedoes;150%;Anti-Air Guns;75%
+Collab004;Vert;Aircraft carrier (CV) CV;Fighters;120%;Dive Bombers;125%;Dive Bombers;125%
+Collab005;Purple Heart;Light cruiser (CL) CL;CL Guns;145%;Torpedoes;150%;Anti-Air Guns;100%
+Collab006;Black Heart;Heavy cruiser (CA) CA;CA Guns;130%;Torpedoes;165%;Anti-Air Guns;110%
+Collab007;White Heart;Destroyer (DD) DD;DD Guns;80%;Torpedoes;150%;Anti-Air Guns;75%
+Collab008;Green Heart;Aircraft carrier (CV) CV;Fighters;120%;Dive Bombers;125%;Dive Bombers;125%
+Collab021;22;Destroyer (DD) DD;DD Guns;135%;Torpedoes;115%;Anti-Air Guns;95%
+Collab022;33;Destroyer (DD) DD;DD Guns;115%;Torpedoes;130%;Anti-Air Guns;95%
+Collab031;Kuon;Heavy cruiser (CA) CA;CA Guns;110%;Torpedoes;105%;Anti-Air Guns;75%
+Collab032;Nekone;Destroyer (DD) DD;DD Guns;85%;Torpedoes;120%;Anti-Air Guns;65%
+Collab033;Rurutie;Light cruiser (CL) CL;CL Guns;110%;Torpedoes;140%;Anti-Air Guns;60%
+Collab034;Uruuru;Light aircraft carrier (CVL) CVL;Fighters;130%;Dive Bombers;125%;Anti-Air Guns;80%
+Collab035;Saraana;Light aircraft carrier (CVL) CVL;Fighters;130%;Torpedo Bombers;125%;Anti-Air Guns;80%
+Collab036;Fumiruiru;Aircraft carrier (CV) CV;Fighters;105%;Torpedo Bombers;105%;Torpedo Bombers;105%
+Collab041;Kizuna AI;Destroyer (DD) DD;DD Guns;75%;Torpedoes;160%;Anti-Air Guns;105%
+Collab042;Elegant Kizuna AI;Heavy cruiser (CA) CA;CA Guns;110%;DD Guns;55%;Anti-Air Guns;125%
+Collab043;Anniversary Kizuna AI;Aircraft carrier (CV) CV;Fighters;110%;Dive Bombers;135%;Torpedo Bombers;135%
+Collab044;Super Gamer Kizuna AI;Battleship (BB) BB;BB Guns;130%;CL/DD Guns;200%;Anti-Air Guns;100%
+Collab051;Shirakami Fubuki;Destroyer (DD) DD;DD Guns;85%;Torpedoes;150%;Dive Bombers;80%
+Collab052;Tokino Sora;Aircraft carrier (CV) CV;Fighters;130%;Dive Bombers;125%;Torpedo Bombers;125%
+Collab053;Minato Aqua;Submarine (SS) SS;Submarine Torpedoes;125%;Submarine Torpedoes;125%;DD Guns;85%
+Collab054;Natsuiro Matsuri;Destroyer (DD) DD;DD Guns;75%;Torpedoes;125%;Anti-Air Guns;105%
+Collab055;Nakiri Ayame;Heavy cruiser (CA) CA;CA Guns;110%;DD Guns;55%;Anti-Air Guns;105%
+Collab056;Murasaki Shion;Light aircraft carrier (CVL) CVL;Fighters;130%;Torpedo Bombers;125%;Anti-Air Guns;100%
+Collab057;Ookami Mio;Aircraft carrier (CV) CV;Fighters;140%;Dive Bombers;115%;Torpedo Bombers;115%
+524;Foch;Heavy cruiser (CA) CA;CA Guns;115%;Torpedoes;165%;Anti-Air Guns;90%
+10081;Rikka Takarada;Light cruiser (CL) CL;CL Guns / Auxiliaries;155%;Torpedoes / Auxiliaries;160%;Anti-Air Guns / Auxiliaries;110%
+10082;Akane Shinjo;Battleship (BB) BB;BB Guns;135%;CL/DD Guns;200%;Anti-Air Guns;100%
+10083;Hass;Light cruiser (CL) CL;CL Guns;135%;Torpedoes;160%;Anti-Air Guns;110%
+10084;Namiko;Heavy cruiser (CA) CA;CA Guns;130%;Torpedoes;155%;Anti-Air Guns;100%
+10085;Yume Minami;Heavy cruiser (CA) CA;CA Guns;120%;DD Guns;65%;Anti-Air Guns;115%
+10086;Chise Asukagawa;Aircraft carrier (CV) CV;Fighters;120%;Dive Bombers;125%;Torpedo Bombers;130%
+10087;Mujina;Battleship (BB) BB;BB Guns;130%;CL/DD Guns;200%;Anti-Air Guns;100%
+526;Elbe;Light aircraft carrier (CVL) CVL;Fighters;145%;Dive Bombers;135%;Anti-Air Guns;80%
+527;Prinz Adalbert;Heavy cruiser (CA) CA;CA/283mm CB Gun;150%;Torpedoes;140%;Anti-Air Guns;100%
+528;U-1206;Submarine (SS) SS;Submarine Torpedoes;125%;Submarine Torpedoes;120%;DD Guns;85%
+529;Ulrich von Hutten;Battleship (BB) BB;BB Guns;155%;CL/DD Guns;210%;Anti-Air Guns;90%
+30007;Gneisenau META;Battlecruiser (BC) BC;BB Guns;130%;CL/DD Guns;200%;Anti-Air Guns;100%
+30006;Hiyou META;Light aircraft carrier (CVL) CVL;Fighters;100%;Dive Bombers;120%;Torpedo Bombers;110%
+525;Magdeburg;Light cruiser (CL) CL;CL Guns;145%;Torpedoes;135%;Anti-Air Guns;120%
