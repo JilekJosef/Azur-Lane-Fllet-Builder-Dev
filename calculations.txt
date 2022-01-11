@@ -1,0 +1,5 @@
+Accuracy = Math.min(1, Math.max(0.1, (0.1 + accEnemy/(accE+eva+2) + ((luckEnemy - luck)/1000))))
+eHP = HP/Accuracy
+
+accEnemy = 151,4 avarage acc
+luckEnemy = 53,5 avarage luck

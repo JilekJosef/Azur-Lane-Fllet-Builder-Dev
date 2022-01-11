@@ -98,44 +98,77 @@
                         <thead>
                             <tr>
                                 <th id="colorWhite1">Priorities</th>
+                                <th style="color: white;padding-top: 0;padding-bottom: 0;text-align: center;vertical-align: middle;"><button class="btn btn-primary" id="manualSwitch" type="button" style="margin: 0;padding-top: 7px;padding-bottom: 7px;padding-left: 10px;padding-right: 10px;background-color: var(--bs-red);" onclick="manualModeSwitch()">Switch to manual</button></th>
                             </tr>
                         </thead>
                         <tbody id="colorWhite0">
                             <tr>
-                                <td>Survivability</td>
-                                <td><input class="form-range" type="range" id="suvivabilitySlider" onchange="prioritiesUpdate()"></td>
+                                <td class="auto" style="width: 150px;">
+                                    <div id="floating-label-23" class="form-floating mb-3" style="width: auto;margin-bottom: 0px!important;"><select id="fleetFocus" class="form-select" for="floatinginput" placeholder="HGsOFT" style="width: 125px;" onchange="updateShips()">
+                                            <optgroup label="This is a group">
+                                                <option value="1">This is item 1</option>
+                                                <option value="2">This is item 2</option>
+                                                <option value="3">This is item 3</option>
+                                            </optgroup>
+                                        </select><label class="form-label" id="floating-label-24" style="color: rgba(0,0,0,0.65);">Fleet focus</label></div>
+                                </td>
+                                <td class="auto" style="width: 150px;">
+                                    <div id="floating-label-21" class="form-floating mb-3" style="width: 130px;margin-bottom: 0px!important;"><select id="fleetType" class="form-select" for="floatinginput" placeholder="HGsOFT" style="width: 125px;" onchange="updateShips()">
+                                            <optgroup label="This is a group">
+                                                <option value="1">This is item 1</option>
+                                                <option value="2">This is item 2</option>
+                                                <option value="3">This is item 3</option>
+                                            </optgroup>
+                                        </select><label class="form-label" id="floating-label-22" style="color: rgba(0,0,0,0.65);">Fleet type</label></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td>Burst&nbsp;survivability</td>
-                                <td><input class="form-range" type="range" id="burstSurvivabilitySlider" onchange="prioritiesUpdate()"></td>
+                                <td class="auto">AA Focus&nbsp; &nbsp;&nbsp;</td>
+                                <td class="auto"><input type="checkbox" id="AAFocus" onchange="updateShips()"></td>
                             </tr>
                             <tr>
-                                <td>Firepower</td>
-                                <td><input class="form-range" type="range" id="firepowerSlider" onchange="prioritiesUpdate()"></td>
+                                <td class="auto"></td>
+                                <td class="auto"></td>
                             </tr>
                             <tr>
-                                <td>Torpedo</td>
-                                <td><input class="form-range" type="range" id="torpedoSlider" onchange="prioritiesUpdate()"></td>
+                                <td class="auto"></td>
+                                <td class="auto"></td>
                             </tr>
                             <tr>
-                                <td>Aviation</td>
-                                <td><input class="form-range" type="range" id="aviationSlider" onchange="prioritiesUpdate()"></td>
+                                <td class="manual" style="display: none;">Survivability</td>
+                                <td class="manual" style="display: none;"><input class="form-range" type="range" id="suvivabilitySlider" onchange="prioritiesUpdate()"></td>
                             </tr>
                             <tr>
-                                <td>Anti Air</td>
-                                <td><input class="form-range" type="range" id="antiAirSlider" onchange="prioritiesUpdate()"></td>
+                                <td class="manual" style="display: none;">Burst&nbsp;survivability</td>
+                                <td class="manual" style="display: none;"><input class="form-range" type="range" id="burstSurvivabilitySlider" onchange="prioritiesUpdate()"></td>
                             </tr>
                             <tr>
-                                <td>Same faction</td>
-                                <td><input class="form-range" type="range" id="SameFactionSlider" onchange="prioritiesUpdate()"></td>
+                                <td class="manual" style="display: none;">Firepower</td>
+                                <td class="manual" style="display: none;"><input class="form-range" type="range" id="firepowerSlider" onchange="prioritiesUpdate()"></td>
                             </tr>
                             <tr>
-                                <td>Synergy</td>
-                                <td><input class="form-range" type="range" id="SynergySlider" onchange="prioritiesUpdate()"></td>
+                                <td class="manual" style="display: none;">Torpedo</td>
+                                <td class="manual" style="display: none;"><input class="form-range" type="range" id="torpedoSlider" onchange="prioritiesUpdate()"></td>
+                            </tr>
+                            <tr>
+                                <td class="manual" style="display: none;">Aviation</td>
+                                <td class="manual" style="display: none;"><input class="form-range" type="range" id="aviationSlider" onchange="prioritiesUpdate()"></td>
+                            </tr>
+                            <tr>
+                                <td class="manual" style="display: none;">Anti Air</td>
+                                <td class="manual" style="display: none;"><input class="form-range" type="range" id="antiAirSlider" onchange="prioritiesUpdate()"></td>
+                            </tr>
+                            <tr>
+                                <td class="manual" style="display: none;">Same faction</td>
+                                <td class="manual" style="display: none;"><input class="form-range" type="range" id="SameFactionSlider" onchange="prioritiesUpdate()"></td>
+                            </tr>
+                            <tr>
+                                <td class="manual" style="display: none;">Synergy</td>
+                                <td class="manual" style="display: none;"><input class="form-range" type="range" id="SynergySlider" onchange="prioritiesUpdate()"></td>
                             </tr>
                             <tr>
                                 <td><button class="btn btn-primary" id="clearFleet" type="button" style="margin: 0;" onclick="clearFleet()">Clear Fleet</button></td>
-                                <td><button class="btn btn-primary" id="resetPriorities" type="button" style="margin: 0;" onclick="resetPriorities()">Reset Priorities</button></td>
+                                <td><button class="btn btn-primary" id="resetPriorities" type="button" style="margin: 0;padding-left: 20px;padding-right: 20px;" onclick="resetPriorities()">Reset Priorities</button></td>
                             </tr>
                         </tbody>
                     </table>
@@ -147,41 +180,41 @@
                         <thead>
                             <tr>
                                 <th>Main Fleet Average</th>
-                                <th>(Pseudo values)</th>
+                                <th style="text-align: center;vertical-align: middle;">Tier</th>
                                 <th>Vanguard Fleet Average</th>
-                                <th>(Pseudo values)</th>
+                                <th style="text-align: center;vertical-align: middle;">Tier</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>Firepower</td>
-                                <td id="mainFirepower">0</td>
+                                <td id="mainFirepower" style="text-align: center;vertical-align: middle;">0</td>
                                 <td>Firepower</td>
-                                <td id="vanguardFirepower">0</td>
+                                <td id="vanguardFirepower" style="text-align: center;vertical-align: middle;">0</td>
                             </tr>
                             <tr>
                                 <td>Anti Air</td>
-                                <td id="mainAntiAir">0</td>
+                                <td id="mainAntiAir" style="text-align: center;vertical-align: middle;">0</td>
                                 <td>Anti Air</td>
-                                <td id="vanguardAntiAir">0</td>
+                                <td id="vanguardAntiAir" style="text-align: center;vertical-align: middle;">0</td>
                             </tr>
                             <tr>
                                 <td>Torpedo</td>
-                                <td id="mainTorpedo">0</td>
+                                <td id="mainTorpedo" style="text-align: center;vertical-align: middle;">0</td>
                                 <td>Torpedo</td>
-                                <td id="vanguardTorpedo">0</td>
+                                <td id="vanguardTorpedo" style="text-align: center;vertical-align: middle;">0</td>
                             </tr>
                             <tr>
                                 <td>Aviation</td>
-                                <td id="mainAviation">0</td>
+                                <td id="mainAviation" style="text-align: center;vertical-align: middle;">0</td>
                                 <td>Aviation</td>
-                                <td id="vanguardAviation">0</td>
+                                <td id="vanguardAviation" style="text-align: center;vertical-align: middle;">0</td>
                             </tr>
                             <tr>
                                 <td>Effective Health</td>
-                                <td id="mainHealth">0</td>
+                                <td id="mainHealth" style="text-align: center;vertical-align: middle;">0</td>
                                 <td>Effective Health</td>
-                                <td id="vanguardHealth">0</td>
+                                <td id="vanguardHealth" style="text-align: center;vertical-align: middle;">0</td>
                             </tr>
                         </tbody>
                     </table>

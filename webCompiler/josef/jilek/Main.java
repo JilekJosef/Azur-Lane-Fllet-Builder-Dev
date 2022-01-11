@@ -59,7 +59,9 @@ public class Main {
         String index = Files.readString(Paths.get("./index.html"));
         index = index.replaceFirst("<link rel=\"stylesheet\" href=\"assets/bootstrap/css/bootstrap.min.css\">", "<style>" + Files.readString(Paths.get("./assets/bootstrap/css/bootstrap.min.css")) + "</style>");
         index = index.replaceFirst("<link rel=\"stylesheet\" href=\"assets/css/styles.min.css\">", "<style>" + Files.readString(Paths.get("./assets/css/styles.min.css")) + "</style>");
-
+        index = index.replaceFirst("<script src=\"assets/bootstrap/js/bootstrap.min.js\"></script>", "<script>" + Matcher.quoteReplacement(Files.readString(Paths.get("./assets/bootstrap/js/bootstrap.min.js"))) +  "</script>");
+        index = index.replaceFirst("<script src=\"assets/js/script.min.js\"></script>", "<script>" + Matcher.quoteReplacement(Files.readString(Paths.get("./assets/js/script.min.js"))) +  "</script>");
+        index = index.replaceFirst("<script src=\"https://code.jquery.com/jquery-1.12.4.min.js\"></script>", "");
         index = index.replaceFirst("<title>AL_FB_UI</title>", "<title>Azur Lane Fleet Builder</title>" +
                 "<script>" + Matcher.quoteReplacement(Files.readString(Paths.get("./JQuery/jquery-3.6.0.min.js"))) + "</script>" +
                 "<script>" + Matcher.quoteReplacement(mainJS) + "</script>"

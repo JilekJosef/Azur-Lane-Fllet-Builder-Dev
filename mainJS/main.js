@@ -1,3 +1,5 @@
+let autoModeBool = true;
+
 let constantCalculationMultiplier = 1;
 
 let eHPModConst = 0;
@@ -7,15 +9,15 @@ let AAModConst = 0;
 let AVIModConst = 0;
 
 //control panel
-let eHPMultiplier = 0.1;
-let burstDamageFear = 2; // 1 mean low, 2 mean high
+let eHPMultiplier = 0.0;
+let burstDamageFear = 1.5; // 1 mean low, 2 mean high
 
 let FPMultiplier = 0.0;
 let TRPMultiplier = 0.0;
 let AVIMultiplier = 0.0;
 let AAMultiplier = 0.0;
-let factionPriority = 0.2;
-let connectionsPriority = 0.2;
+let factionPriority = 0.5;
+let connectionsPriority = 0.5;
 
 const sliderIds = ["suvivabilitySlider", "burstSurvivabilitySlider", "firepowerSlider", "torpedoSlider", "aviationSlider", "antiAirSlider", "SameFactionSlider", "SynergySlider"];
 const defaultPriorities = [eHPMultiplier,burstDamageFear,FPMultiplier,TRPMultiplier,AVIMultiplier,AAMultiplier,factionPriority,connectionsPriority]
@@ -170,11 +172,11 @@ class Ship{
         //pseudo eHP + armor
         //TODO calculate best combination
         if(type === "DD"){
-            this.effectiveHealth = (parseInt(health)+1060)/(Math.max(1, Math.min(0.1, (0.1 + averageAccuracy/(averageAccuracy+parseInt(evasion)+2) + ((averageLuck - parseInt(luck))/1000))))); // + 1060 health 2 repair toolboxes, needed for maintain accurate calc
+            this.effectiveHealth = (parseInt(health)+1060)/(Math.min(1, Math.max(0.1, (0.1 + averageAccuracy/(averageAccuracy+parseInt(evasion)+2) + ((averageLuck - parseInt(luck))/1000))))); // + 1060 health 2 repair toolboxes, needed for maintain accurate calc
         }else if(type === "CB" || type === "CA" || type === "CL"){
-            this.effectiveHealth = (parseInt(health)+602)/(Math.max(1, Math.min(0.1, (0.1 + averageAccuracy/(averageAccuracy+parseInt(evasion)+2) + ((averageLuck - parseInt(luck)+49)/1000))))); // 1 repair toolbox + Improved Hydraulic Rudder (washing machine)
+            this.effectiveHealth = (parseInt(health)+602)/(Math.min(1, Math.max(0.1, (0.1 + averageAccuracy/(averageAccuracy+parseInt(evasion)+2) + ((averageLuck - parseInt(luck)+49)/1000))))); // 1 repair toolbox + Improved Hydraulic Rudder (washing machine)
         }else{
-            this.effectiveHealth = (parseInt(health))/(Math.max(1, Math.min(0.1, (0.1 + averageAccuracy/(averageAccuracy+parseInt(evasion)+2) + ((averageLuck - parseInt(luck))/1000)))));
+            this.effectiveHealth = (parseInt(health))/(Math.min(1, Math.max(0.1, (0.1 + averageAccuracy/(averageAccuracy+parseInt(evasion)+2) + ((averageLuck - parseInt(luck))/1000)))));
         }
         if(armor === "Light"){
             this.effectiveHealth = this.effectiveHealth*0.95;
@@ -187,11 +189,11 @@ class Ship{
     }
     updateEHP(){
         if(this.type === "DD"){
-            this.effectiveHealth = (parseInt(this.health)+1060)**burstDamageFear*(parseInt(this.evasion)+(parseInt(this.luck)/1000.00)); // + 1060 health 2 repair toolboxes, needed for maintain accurate calc
-        }else if(this.type === "CB" || this.type === "CA" || this.type === "CL"){                                                                        // last thing this (parseInt(health)+1060)/10000.00 goniometric function sin could be multiplier for health if problems with low hp ships less tankier
-            this.effectiveHealth = (parseInt(this.health)+602)**burstDamageFear*((parseInt(this.evasion)+49)+(parseInt(this.luck)/1000.00)); // 1 repair toolbox + Improved Hydraulic Rudder (washing machine)
+            this.effectiveHealth = (parseInt(this.health)+1060)/(Math.min(1, Math.max(0.1, (0.1 + averageAccuracy/(averageAccuracy+parseInt(this.evasion)+2) + ((averageLuck - parseInt(this.luck))/1000))))); // + 1060 health 2 repair toolboxes, needed for maintain accurate calc
+        }else if(this.type === "CB" || this.type === "CA" || this.type === "CL"){
+            this.effectiveHealth = (parseInt(this.health)+602)/(Math.min(1, Math.max(0.1, (0.1 + averageAccuracy/(averageAccuracy+parseInt(this.evasion)+2) + ((averageLuck - parseInt(this.luck)+49)/1000))))); // 1 repair toolbox + Improved Hydraulic Rudder (washing machine)
         }else{
-            this.effectiveHealth = parseInt(this.health)**burstDamageFear*(parseInt(this.evasion)+(parseInt(this.luck)/1000.0));
+            this.effectiveHealth = (parseInt(this.health))/(Math.min(1, Math.max(0.1, (0.1 + averageAccuracy/(averageAccuracy+parseInt(this.evasion)+2) + ((averageLuck - parseInt(this.luck))/1000)))));
         }
         if(this.armor === "Light"){
             this.effectiveHealth = this.effectiveHealth*0.95;
@@ -203,7 +205,7 @@ class Ship{
     }
 
     calcSlotPower(accuracy,luck,reload,power,effi){
-        let trueAcc = parseInt(accuracy)+(parseInt(luck)/1000.00);
+        let trueAcc = parseInt(accuracy)+(parseInt(luck)/1000.00); //TODO maybe should be same as eHP accuracy
         let trueReload = Math.sqrt(200.00/(parseInt(reload)+100.00));
         return (trueAcc*parseInt(power)/trueReload)*parseFloat(effi);
     }
@@ -345,7 +347,7 @@ function recommendedShips(ships){
     }
 }
 
-function shipSort(ships, fleetType, connectionsPriority, factionPriority, currentShips, shipFocus, eHPMultiplier, TRPMultiplier, FPMultiplier, AVIMultiplier, AAMultiplier) {
+function getFactionsAndConnections(currentShips){
     let factions = [];
     let connections = [];
     for (let i = 0; i < currentShips.length; i++) {
@@ -368,8 +370,16 @@ function shipSort(ships, fleetType, connectionsPriority, factionPriority, curren
     //purify connections
     connections = Array.from(new Set(connections));
 
+    return [factions,connections];
+}
+
+function shipSort(ships, fleetType, connectionsPriority, factionPriority, currentShips, shipFocus, eHPMultiplier, TRPMultiplier, FPMultiplier, AVIMultiplier, AAMultiplier) {
+    let temp = getFactionsAndConnections(currentShips);
+    let factions = temp[0];
+    let connections = temp[1];
+
     //* mod from method parameters can be added here
-    let constantMultiplier = 1;
+    let constantMultiplier = 2;
 
     let shipsRated = [];
     let shipsRatedIndex = -1;
@@ -379,35 +389,20 @@ function shipSort(ships, fleetType, connectionsPriority, factionPriority, curren
             shipsRatedIndex++;
             for (let j = 0; j < factions.length; j++) {
                 if(ships[shipsRated[shipsRatedIndex][0]].nation === factions[j]){
-                    shipsRated[shipsRatedIndex][1] += -factionPriority*constantMultiplier -0.5;
+                    shipsRated[shipsRatedIndex][1] += -factionPriority*constantMultiplier;// -0.5;
                 }
             }
 
             for (let j = 0; j < connections.length; j++) {
                 if (ships[shipsRated[shipsRatedIndex][0]].name === connections[j]){
-                    shipsRated[shipsRatedIndex][1] += -connectionsPriority*constantMultiplier -0.5;
+                    shipsRated[shipsRatedIndex][1] += -connectionsPriority*constantMultiplier;// -0.5;
                 }
             }
         }
     }
 
     for (let i = 0; i < shipsRated.length; i++) {
-        if (shipFocus === "flagship") {
-            shipsRated[i][1] += -ships[shipsRated[i][0]].effectiveHealth / eHPModConst * 2 * constantMultiplier - ships[shipsRated[i][0]].effectiveHealth / eHPModConst * eHPMultiplier * constantMultiplier;
-        }else if (shipFocus === "mainTank"){
-            shipsRated[i][1] += -((ships[shipsRated[i][0]].effectiveHealth / eHPModConst) * 2 * constantMultiplier) - ships[shipsRated[i][0]].effectiveHealth / eHPModConst * eHPMultiplier * constantMultiplier;
-        }else if(shipFocus === "offTank") {
-            shipsRated[i][1] += - ships[shipsRated[i][0]].effectiveHealth / (eHPModConst * 2)*4*constantMultiplier - ships[shipsRated[i][0]].effectiveHealth/eHPModConst*eHPMultiplier*constantMultiplier;
-            shipsRated[i][1] += - ships[shipsRated[i][0]].effectiveFirepower/FPModConst*1*constantMultiplier - ships[shipsRated[i][0]].effectiveFirepower/FPModConst*FPMultiplier*constantMultiplier;
-            shipsRated[i][1] += - ships[shipsRated[i][0]].effectiveTorpedo/TRPModConst*1*constantMultiplier - ships[shipsRated[i][0]].effectiveTorpedo/TRPModConst*TRPMultiplier*constantMultiplier;
-        }else if(shipFocus === "protected"){
-            shipsRated[i][1] += - ships[shipsRated[i][0]].effectiveFirepower/FPModConst*2*constantMultiplier - ships[shipsRated[i][0]].effectiveFirepower/FPModConst*FPMultiplier*constantMultiplier;
-            shipsRated[i][1] += - ships[shipsRated[i][0]].effectiveTorpedo/TRPModConst*2*constantMultiplier - ships[shipsRated[i][0]].effectiveTorpedo/TRPModConst*TRPMultiplier*constantMultiplier;
-        }else if(shipFocus === "side1"|| shipFocus === "side2"){
-            shipsRated[i][1] += - ships[shipsRated[i][0]].effectiveFirepower/FPModConst*1.5*constantMultiplier - ships[shipsRated[i][0]].effectiveFirepower/FPModConst*FPMultiplier*constantMultiplier;
-            shipsRated[i][1] += - ships[shipsRated[i][0]].effectiveAviation/AVIModConst*1.5*constantMultiplier - ships[shipsRated[i][0]].effectiveAviation/AVIModConst*AVIMultiplier*constantMultiplier;
-            shipsRated[i][1] += - ships[shipsRated[i][0]].effectiveAntiAir/AAModConst*1.5*constantMultiplier - ships[shipsRated[i][0]].effectiveAntiAir/AAModConst*AAMultiplier*constantMultiplier;
-        }
+        /**/
         shipsRated[i][1] += - ships[shipsRated[i][0]].effectiveAviation/AVIModConst*AVIMultiplier*constantMultiplier;
         shipsRated[i][1] += - ships[shipsRated[i][0]].effectiveAntiAir/AAModConst*AAMultiplier*constantMultiplier;
         shipsRated[i][1] += - ships[shipsRated[i][0]].effectiveTorpedo/TRPModConst*TRPMultiplier*constantMultiplier;
@@ -448,6 +443,147 @@ function shipSort(ships, fleetType, connectionsPriority, factionPriority, curren
 
     return shipsRated;
 }
+
+let BBCount = 0;
+let CVCount = 0;
+let AACount = 0;
+let healerCount = 0;
+function shipSortAuto(ships, connectionsPriority, factionPriority, currentShips, shipFocus, mainOrVan){
+    resetPriorities();
+    let temp = getFactionsAndConnections(currentShips);
+    let factions = temp[0];
+    let connections = temp[1];
+
+    let fleetFocus = $("#fleetFocus").val();
+    let fleetType = $("#fleetType").val();
+    let AAPriority =$("#AAFocus").is(":checked");
+
+    let shipsRated = [];
+    for (let i = 0; i < ships.length; i++) {
+        shipsRated.push([i, parseInt(ships[i].tier)]);
+        if (shipFocus === "flagship") {
+            for (let j = 0; j < ships[i].special.length; j++) {
+                if(ships[i].special[j] === "flag"){
+                    shipsRated[i][1] += -1;
+                }
+            }
+        }else if (shipFocus === "mainTank"){
+            for (let j = 0; j < ships[i].special.length; j++) {
+                if(ships[i].special[j] === "tank"){
+                    shipsRated[i][1] += -2;
+                }
+            }
+        }else if(shipFocus === "offTank") {
+            for (let j = 0; j < ships[i].special.length; j++) {
+                if(ships[i].special[j] === "tank"){
+                    shipsRated[i][1] += -0.5;
+                }
+            }
+        }else if(shipFocus === "protected"){
+            for (let j = 0; j < ships[i].special.length; j++) {
+                let isTank = false;
+                if(ships[i].special[j] === "tank"){
+                    isTank = true
+                }
+                if(!isTank){
+                    shipsRated[i][1] += -1;
+                }
+            }
+        }else if(shipFocus === "side1"|| shipFocus === "side2"){
+        }
+
+        for (let j = 0; j < factions.length; j++) {
+            if(factions[j] === ships[i].nation){
+                shipsRated[i][1] += -factionPriority;
+            }
+        }
+        for (let j = 0; j < connections.length; j++) {
+            if(ships[i].recommended !== []){
+                for (let k = 0; k < ships[i].recommended.length; k++) {
+                    if(connections[j] === ships[i].recommended[k]){
+                        shipsRated[i][1] += -connectionsPriority;
+                        break;
+                    }
+                }
+            }else{
+                break;
+            }
+        }
+
+        if(fleetFocus === "Boss"){
+            for (let j = 0; j < ships[i].special.length; j++) {
+                if(ships[i].special[j] === "boss"){
+                    shipsRated[i][1] += -1;
+                    break;
+                }
+            }
+        }else if(fleetFocus === "Mob"){
+            for (let j = 0; j < ships[i].special.length; j++) {
+                if(ships[i].special[j] === "mob" || ships[i].special[j] === "healer"){
+                    shipsRated[i][1] += -1;
+                    break;
+                }
+            }
+        }else{ //Universal
+
+        }
+        if(fleetType === "Standard"){
+            if(shipFocus === "flagship" && (ships[i].type === "BB" || ships[i].type === "BC" || ships[i].type === "BBV" || ships[i].type === "BM")){
+                shipsRated[i][1] += -1;
+            }
+            if((shipFocus === "side1" || shipFocus === "side2") && (BBCount > 1) && (ships[i].type === "CV" || ships[i].type === "CVL")){
+                shipsRated[i][1] += -1;
+            }
+            if((shipFocus === "side1" || shipFocus === "side2") && (CVCount > 1) && (ships[i].type === "BB" || ships[i].type === "BC" || ships[i].type === "BBV" || ships[i].type === "BM")){
+                shipsRated[i][1] += -1;
+            }
+        }else if(fleetType === "BB/BC"){
+            if(ships[i].type === "BB" || ships[i].type === "BC" || ships[i].type === "BBV"){
+                shipsRated[i][1] += -1;
+            }
+        }else{ //CV/CVL
+            if(ships[i].type === "CV" || ships[i].type === "CVL"){
+                shipsRated[i][1] += -1;
+            }
+        }
+        if(AAPriority){
+            if(AACount >! 2){
+                for (let j = 0; j < ships[i].special.length; j++) {
+                    if(ships[i].special[j] === "aa"){
+                        shipsRated[i][1] += -1;
+                        break;
+                    }
+                }
+            }
+        }
+    }
+    temp = [];
+    for (let i = 0; i < shipsRated.length; i++) {
+        if(ships[shipsRated[i][0]].fleetPart === mainOrVan){
+            let duplicate = false;
+            for (let j = 0; j < currentShips.length; j++) {
+                if(shipsRated[i][0] === parseInt(currentShips[j])){
+                    duplicate = true;
+                    break;
+                }
+            }
+            if(!duplicate){
+                temp.push(shipsRated[i]);
+            }
+        }
+    }
+    shipsRated = temp;
+
+    shipsRated = shipsSorter2D(shipsRated);
+
+    return shipsRated;
+}
+//TODO complete rework
+//add all tierlist flairs to data
+//corting concept autobuild fleet, starting from flag
+//sorting tier, flag
+//if low tier or no flag use calculations
+//
 
 function shipsSorter2D(arr) {
     let change = false;
@@ -517,15 +653,30 @@ function prepareToHTMLInjection(shipsSorted, currentShipsRaw, index){
 function updateShips(){
     let currentShipsRaw = getCurrentShips();
     let currentShips = purifyRawCurrentShips(currentShipsRaw);
-    calculateFleetPower(currentShipsRaw);
 
-    let ids = ["side1","flagship","side2","mainTank","protected","offTank"]; //might be global
-    let fleetType = ["Main","Main","Main","Vanguard","Vanguard","Vanguard"];
-    for (let i = 0; i < ids.length; i++) {
-        let shipsSorted = shipSort(ships,fleetType[i],connectionsPriority,factionPriority,currentShips,ids[i],eHPMultiplier,TRPMultiplier,FPMultiplier,AVIMultiplier,AAMultiplier);
-        HTMLInjection(ids[i], prepareToHTMLInjection(shipsSorted,currentShipsRaw,i), currentShipsRaw[i]);
+    if(autoModeBool){
+        let ids = ["flagship","side1","side2","mainTank","protected","offTank"];
+        let fleetType = ["Main","Main","Main","Vanguard","Vanguard","Vanguard"];
+        for (let i = 0; i < ids.length; i++) {
+            let shipsSorted = shipSortAuto(ships,connectionsPriority,factionPriority,currentShips,ids[i],fleetType[i]);
+            HTMLInjection(ids[i], prepareToHTMLInjection(shipsSorted,currentShipsRaw,i), shipsSorted[0][0]);
+            currentShipsRaw = getCurrentShips();
+            currentShips = purifyRawCurrentShips(currentShipsRaw);
+        }
+        BBCount = 0;
+        CVCount = 0;
+        AACount = 0;
+        healerCount = 0;
+    }else{
+        let ids = ["side1","flagship","side2","mainTank","protected","offTank"]; //might be global
+        let fleetType = ["Main","Main","Main","Vanguard","Vanguard","Vanguard"];
+        for (let i = 0; i < ids.length; i++) {
+            let shipsSorted = shipSort(ships,fleetType[i],connectionsPriority,factionPriority,currentShips,ids[i],eHPMultiplier,TRPMultiplier,FPMultiplier,AVIMultiplier,AAMultiplier);
+            HTMLInjection(ids[i], prepareToHTMLInjection(shipsSorted,currentShipsRaw,i), currentShipsRaw[i]);
+        }
     }
-
+    currentShipsRaw = getCurrentShips();
+    calculateFleetPower(currentShipsRaw);
 }
 
 //initial page config
@@ -535,16 +686,74 @@ document.addEventListener("DOMContentLoaded", function (){
     //label screenshot
     baseFilterInjection();
     generateButtons();
-
-
     loadPriorities();
-    let ids = ["side1","flagship","side2","mainTank","protected","offTank"];
-    let fleetType = ["Main","Main","Main","Vanguard","Vanguard","Vanguard"];
+    initializeAutoPriorities();
+    let ids = ["flagship","side1","side2","mainTank","protected","offTank"];
     for (let i = 0; i < ids.length; i++) {
-        let shipsSorted = shipSort(ships,fleetType[i],connectionsPriority,factionPriority,[],ids[i],eHPMultiplier,TRPMultiplier,FPMultiplier,AVIMultiplier,AAMultiplier);
-        HTMLInjection(ids[i], prepareToHTMLInjection(shipsSorted,[],i), "empty");
+        HTMLInjection(ids[i], new Array(0), "empty");
     }
+
+    let currentShipsRaw = getCurrentShips();
+    let currentShips = purifyRawCurrentShips(currentShipsRaw);
+    if(autoModeBool){
+        ids = ["flagship","side1","side2","mainTank","protected","offTank"];
+        let fleetType = ["Main","Main","Main","Vanguard","Vanguard","Vanguard"];
+        for (let i = 0; i < ids.length; i++) {
+            let shipsSorted = shipSortAuto(ships,connectionsPriority,factionPriority,currentShips,ids[i],fleetType[i]);
+            let temp = ships[shipsSorted[0][0]].name.replaceAll(" ", "");
+            HTMLInjection(ids[i], prepareToHTMLInjection(shipsSorted,currentShipsRaw,i), shipsSorted[0][0]);
+            currentShipsRaw = getCurrentShips();
+            currentShips = purifyRawCurrentShips(currentShipsRaw);
+        }
+        BBCount = 0;
+        CVCount = 0;
+        AACount = 0;
+        healerCount = 0;
+    }else{
+        let fleetType = ["Main","Main","Main","Vanguard","Vanguard","Vanguard"];
+        for (let i = 0; i < ids.length; i++) {
+            let shipsSorted = shipSort(ships,fleetType[i],connectionsPriority,factionPriority,[],ids[i],eHPMultiplier,TRPMultiplier,FPMultiplier,AVIMultiplier,AAMultiplier);
+            HTMLInjection(ids[i], prepareToHTMLInjection(shipsSorted,[],i), "empty");
+        }
+    }
+    currentShipsRaw = getCurrentShips();
+    calculateFleetPower(currentShipsRaw);
 });
+
+const fleetFocusOptions = ["Boss","Mob","Universal"];
+const fleetTypeOptions = ["Standard","BB/BC","CV/CVL"];
+function initializeAutoPriorities(){
+    HTMLOptionInjection("fleetType", fleetTypeOptions);
+    HTMLOptionInjection("fleetFocus", fleetFocusOptions);
+}
+function manualModeSwitch(){
+    autoModeBool = !autoModeBool;
+    if(autoModeBool){
+        document.getElementById("manualSwitch").innerHTML = "Switch to manual";
+    }else{
+        document.getElementById("manualSwitch").innerHTML = "Switch to auto";
+    }
+    if(autoModeBool){
+        let elements = document.querySelectorAll(".manual");
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].setAttribute("style", "display: none;");
+        }
+        elements = document.querySelectorAll(".auto");
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].setAttribute("style", "");
+        }
+    }else{
+        let elements = document.querySelectorAll(".manual");
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].setAttribute("style", "");
+        }
+        elements = document.querySelectorAll(".auto");
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].setAttribute("style", "display: none;");
+        }
+    }
+    updateShips();
+}
 
 function prioritiesUpdate() {
     eHPMultiplier = parseFloat($("#"+sliderIds[0]).val());
@@ -638,11 +847,7 @@ function calculateFleetPower(currentShipsRaw){
 
 }
 
-//TODO onchange="" updates should be injected directly from JS, inject also everything that was not here before
-//TODO add modifiers for flagship, tank ...
-//TODO add event ships 30.11.2021
-
-function HTMLFilterInjection(id, arr) {
+function HTMLOptionInjection(id, arr) {
     let out = "";
     for (let i = 0; i < arr.length; i++) {
         out = out + "<option value=" + arr[i].replaceAll(" ", "") + ">" + arr[i] + "</option>";
@@ -694,7 +899,7 @@ function baseFilterInjection(){
     }
 
     for (let i = 0; i < filterIDs.length; i++) {
-        HTMLFilterInjection(filterIDs[i], data[i])
+        HTMLOptionInjection(filterIDs[i], data[i])
     }
 
     document.getElementById("filterMode").innerHTML = "<option value=" + "BlackList" + ">" + "Black list" + "</option><option value=" + "WhiteList" + ">" + "White list" + "</option>";
