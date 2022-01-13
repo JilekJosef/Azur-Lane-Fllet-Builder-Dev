@@ -98,13 +98,13 @@
                         <thead>
                             <tr>
                                 <th id="colorWhite1">Priorities</th>
-                                <th style="color: white;padding-top: 0;padding-bottom: 0;text-align: center;vertical-align: middle;"><button class="btn btn-primary" id="manualSwitch" type="button" style="margin: 0;padding-top: 7px;padding-bottom: 7px;padding-left: 10px;padding-right: 10px;background-color: var(--bs-red);" onclick="manualModeSwitch()">Switch to manual</button></th>
+                                <th style="color: white;padding-top: 0;padding-bottom: 0;text-align: center;vertical-align: middle;"><button class="btn btn-primary" id="manualSwitch" type="button" style="margin: 0;padding-top: 7px;padding-bottom: 7px;padding-left: 7px;padding-right: 7px;background-color: var(--bs-red);" onclick="manualModeSwitch()">Switch to&nbsp;advanced<br></button></th>
                             </tr>
                         </thead>
                         <tbody id="colorWhite0">
                             <tr>
                                 <td class="auto" style="width: 150px;">
-                                    <div id="floating-label-23" class="form-floating mb-3" style="width: auto;margin-bottom: 0px!important;"><select id="fleetFocus" class="form-select" for="floatinginput" placeholder="HGsOFT" style="width: 125px;" onchange="updateShips()">
+                                    <div id="floating-label-23" class="form-floating mb-3" style="width: auto;margin-bottom: 0px!important;"><select id="fleetFocus" class="form-select" for="floatinginput" placeholder="HGsOFT" style="width: 125px;">
                                             <optgroup label="This is a group">
                                                 <option value="1">This is item 1</option>
                                                 <option value="2">This is item 2</option>
@@ -113,7 +113,7 @@
                                         </select><label class="form-label" id="floating-label-24" style="color: rgba(0,0,0,0.65);">Fleet focus</label></div>
                                 </td>
                                 <td class="auto" style="width: 150px;">
-                                    <div id="floating-label-21" class="form-floating mb-3" style="width: 130px;margin-bottom: 0px!important;"><select id="fleetType" class="form-select" for="floatinginput" placeholder="HGsOFT" style="width: 125px;" onchange="updateShips()">
+                                    <div id="floating-label-21" class="form-floating mb-3" style="width: 130px;margin-bottom: 0px!important;"><select id="fleetType" class="form-select" for="floatinginput" placeholder="HGsOFT" style="width: 125px;">
                                             <optgroup label="This is a group">
                                                 <option value="1">This is item 1</option>
                                                 <option value="2">This is item 2</option>
@@ -124,14 +124,18 @@
                             </tr>
                             <tr>
                                 <td class="auto">AA Focus&nbsp; &nbsp;&nbsp;</td>
-                                <td class="auto"><input type="checkbox" id="AAFocus" onchange="updateShips()"></td>
+                                <td class="auto"><input type="checkbox" id="AAFocus"></td>
                             </tr>
                             <tr>
-                                <td class="auto"></td>
-                                <td class="auto"></td>
+                                <td class="auto">Same faction</td>
+                                <td class="auto"><input type="checkbox" id="sameFactionCheck"></td>
                             </tr>
                             <tr>
-                                <td class="auto"></td>
+                                <td class="auto">Include Collabs</td>
+                                <td class="auto"><input type="checkbox" id="includeCollabs"></td>
+                            </tr>
+                            <tr>
+                                <td class="auto"><button class="btn btn-primary" id="clearFleet-1" type="button" style="margin: 0;" onclick="updateShipsAuto()">Build Fleet</button></td>
                                 <td class="auto"></td>
                             </tr>
                             <tr>
