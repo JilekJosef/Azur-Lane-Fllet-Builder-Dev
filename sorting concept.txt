@@ -1,0 +1,44 @@
+mob fleet
+	tank
+		- eHP || self heal //Math.max(0.5, eHP)
+		- CL || DD Gun
+	middle
+		-(trp + fp)
+		- CL || DD Gun
+	off tank
+		-(eHP + trp + fp) //Math.max(0.25, eHP)
+		- CL || DD Gun
+	flag
+		- flag tag || eHP
+	side
+		
+	- 1 healer
+boss fleet	//CA guns prefered?
+	tank
+		- eHP
+	middle
+		-(trp + fp)
+	off tank
+		-(eHP + trp + fp) //Math.max(0.5, eHP)
+	flag
+		- flag tag || eHP
+	side
+		
+	- no healer
+universal
+	tank
+		- eHP || self heal //Math.max(0.65, eHP)
+	middle
+		-(trp + fp)
+		- CL || DD Gun
+	off tank
+		-(eHP + trp + fp) //Math.max(0.25, eHP)
+		- CL || DD Gun
+	flag
+		- flag tag || eHP
+	side
+		
+	- 1 healer
+
+//double edged eHP boss(high acc), mob (low acc)
+//paired synergy
