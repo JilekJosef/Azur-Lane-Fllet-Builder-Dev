@@ -104,7 +104,7 @@
                         <tbody id="colorWhite0">
                             <tr>
                                 <td class="auto" style="width: 150px;">
-                                    <div id="floating-label-23" class="form-floating mb-3" style="width: auto;margin-bottom: 0px!important;"><select id="fleetFocus" class="form-select" for="floatinginput" placeholder="HGsOFT" style="width: 125px;">
+                                    <div id="floating-label-23" class="form-floating mb-3" style="width: auto;margin-bottom: 0px!important;"><select id="fleetFocus" class="form-select" for="floatinginput" placeholder="HGsOFT" style="width: 125px;" onchange="updateShips()">
                                             <optgroup label="This is a group">
                                                 <option value="1">This is item 1</option>
                                                 <option value="2">This is item 2</option>
@@ -113,7 +113,7 @@
                                         </select><label class="form-label" id="floating-label-24" style="color: rgba(0,0,0,0.65);">Fleet focus</label></div>
                                 </td>
                                 <td class="auto" style="width: 150px;">
-                                    <div id="floating-label-21" class="form-floating mb-3" style="width: 130px;margin-bottom: 0px!important;"><select id="fleetType" class="form-select" for="floatinginput" placeholder="HGsOFT" style="width: 125px;">
+                                    <div id="floating-label-21" class="form-floating mb-3" style="width: 130px;margin-bottom: 0px!important;"><select id="fleetType" class="form-select" for="floatinginput" placeholder="HGsOFT" style="width: 125px;" onchange="updateShips()">
                                             <optgroup label="This is a group">
                                                 <option value="1">This is item 1</option>
                                                 <option value="2">This is item 2</option>
@@ -124,18 +124,18 @@
                             </tr>
                             <tr>
                                 <td class="auto">AA Focus&nbsp; &nbsp;&nbsp;</td>
-                                <td class="auto"><input type="checkbox" id="AAFocus"></td>
+                                <td class="auto"><input type="checkbox" id="AAFocus" onchange="updateShips()"></td>
                             </tr>
                             <tr>
                                 <td class="auto">Same faction</td>
-                                <td class="auto"><input type="checkbox" id="sameFactionCheck"></td>
+                                <td class="auto"><input type="checkbox" id="sameFactionCheck" onchange="updateShips()"></td>
                             </tr>
                             <tr>
                                 <td class="auto">Include Collabs</td>
-                                <td class="auto"><input type="checkbox" id="includeCollabs"></td>
+                                <td class="auto"><input type="checkbox" id="includeCollabs" onchange="updateShips()"></td>
                             </tr>
                             <tr>
-                                <td class="auto"><button class="btn btn-primary" id="clearFleet-1" type="button" style="margin: 0;" onclick="updateShipsAuto()">Build Fleet</button></td>
+                                <td class="auto"><button class="btn btn-primary" id="clearFleet-1" type="button" style="margin: 0;display: none;" onclick="updateShipsAuto()">Build Fleet</button></td>
                                 <td class="auto"></td>
                             </tr>
                             <tr>
